@@ -38,11 +38,14 @@ public class Application implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Message")
 	private java.lang.String message;
 
-	@org.kie.api.definition.type.Label(value = "Margin of Finance")
+	@org.kie.api.definition.type.Label("Margin of Finance")
 	private java.lang.Double margin;
 
-	@org.kie.api.definition.type.Label(value = "Monthly Installment")
+	@org.kie.api.definition.type.Label("Monthly Installment")
 	private java.lang.Double installment;
+
+	@org.kie.api.definition.type.Label(value = "Mortgage Amount")
+	private java.lang.Double mortgageAmount;
 
 	public Application() {
 	}
@@ -151,12 +154,21 @@ public class Application implements java.io.Serializable {
 		this.installment = installment;
 	}
 
+	public java.lang.Double getMortgageAmount() {
+		return this.mortgageAmount;
+	}
+
+	public void setMortgageAmount(java.lang.Double mortgageAmount) {
+		this.mortgageAmount = mortgageAmount;
+	}
+
 	public Application(java.lang.Double price, java.lang.Double downPayment,
 			java.lang.Integer amortization, java.lang.Double interest,
 			java.lang.String name, java.lang.Integer age, java.lang.String iid,
 			java.lang.String creditRating, java.lang.Double income,
 			java.lang.String status, java.lang.String message,
-			java.lang.Double margin, java.lang.Double installment) {
+			java.lang.Double margin, java.lang.Double installment,
+			java.lang.Double mortgageAmount) {
 		this.price = price;
 		this.downPayment = downPayment;
 		this.amortization = amortization;
@@ -170,6 +182,7 @@ public class Application implements java.io.Serializable {
 		this.message = message;
 		this.margin = margin;
 		this.installment = installment;
+		this.mortgageAmount = mortgageAmount;
 	}
 
 }
