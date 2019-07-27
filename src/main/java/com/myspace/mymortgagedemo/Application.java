@@ -14,22 +14,23 @@ public class Application implements java.io.Serializable {
 	private java.lang.Double downPayment;
 	@org.kie.api.definition.type.Label("Loan Tenure")
 	private java.lang.Integer amortization;
-	@org.kie.api.definition.type.Label("Applicant Details")
-	private com.myspace.mymortgagedemo.Applicant applicant;
 	@org.kie.api.definition.type.Label("Interest Rate")
 	private java.lang.Double interest;
 
-	@org.kie.api.definition.type.Label(value = "Applicant Name")
+	@org.kie.api.definition.type.Label("Applicant Name")
 	private java.lang.String name;
 
-	@org.kie.api.definition.type.Label(value = "Applicant Age")
+	@org.kie.api.definition.type.Label("Applicant Age")
 	private java.lang.Integer age;
 
-	@org.kie.api.definition.type.Label(value = "Applicant Identification ID")
+	@org.kie.api.definition.type.Label("Applicant Identification ID")
 	private java.lang.String iid;
 
-	@org.kie.api.definition.type.Label(value = "Credit Rating")
+	@org.kie.api.definition.type.Label("Credit Rating")
 	private java.lang.String creditRating;
+
+	@org.kie.api.definition.type.Label(value = "Applicant Income")
+	private java.lang.Double income;
 
 	public Application() {
 	}
@@ -56,14 +57,6 @@ public class Application implements java.io.Serializable {
 
 	public void setAmortization(java.lang.Integer amortization) {
 		this.amortization = amortization;
-	}
-
-	public com.myspace.mymortgagedemo.Applicant getApplicant() {
-		return this.applicant;
-	}
-
-	public void setApplicant(com.myspace.mymortgagedemo.Applicant applicant) {
-		this.applicant = applicant;
 	}
 
 	public java.lang.Double getInterest() {
@@ -106,21 +99,27 @@ public class Application implements java.io.Serializable {
 		this.creditRating = creditRating;
 	}
 
+	public java.lang.Double getIncome() {
+		return this.income;
+	}
+
+	public void setIncome(java.lang.Double income) {
+		this.income = income;
+	}
+
 	public Application(java.lang.Double price, java.lang.Double downPayment,
-			java.lang.Integer amortization,
-			com.myspace.mymortgagedemo.Applicant applicant,
-			java.lang.Double interest, java.lang.String name,
-			java.lang.Integer age, java.lang.String iid,
-			java.lang.String creditRating) {
+			java.lang.Integer amortization, java.lang.Double interest,
+			java.lang.String name, java.lang.Integer age, java.lang.String iid,
+			java.lang.String creditRating, java.lang.Double income) {
 		this.price = price;
 		this.downPayment = downPayment;
 		this.amortization = amortization;
-		this.applicant = applicant;
 		this.interest = interest;
 		this.name = name;
 		this.age = age;
 		this.iid = iid;
 		this.creditRating = creditRating;
+		this.income = income;
 	}
 
 }
