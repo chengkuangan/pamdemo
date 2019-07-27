@@ -27,7 +27,7 @@ public class Application implements java.io.Serializable {
 	private java.lang.String iid;
 
 	@org.kie.api.definition.type.Label("Credit Rating")
-	private java.lang.String creditRating;
+	private Integer creditRating;
 
 	@org.kie.api.definition.type.Label("Applicant Income")
 	private java.lang.Double income;
@@ -44,7 +44,7 @@ public class Application implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Monthly Installment")
 	private java.lang.Double installment;
 
-	@org.kie.api.definition.type.Label(value = "Mortgage Amount")
+	@org.kie.api.definition.type.Label("Mortgage Amount")
 	private java.lang.Double mortgageAmount;
 
 	public Application() {
@@ -106,14 +106,6 @@ public class Application implements java.io.Serializable {
 		this.iid = iid;
 	}
 
-	public java.lang.String getCreditRating() {
-		return this.creditRating;
-	}
-
-	public void setCreditRating(java.lang.String creditRating) {
-		this.creditRating = creditRating;
-	}
-
 	public java.lang.Double getIncome() {
 		return this.income;
 	}
@@ -162,10 +154,18 @@ public class Application implements java.io.Serializable {
 		this.mortgageAmount = mortgageAmount;
 	}
 
+	public java.lang.Integer getCreditRating() {
+		return this.creditRating;
+	}
+
+	public void setCreditRating(java.lang.Integer creditRating) {
+		this.creditRating = creditRating;
+	}
+
 	public Application(java.lang.Double price, java.lang.Double downPayment,
 			java.lang.Integer amortization, java.lang.Double interest,
 			java.lang.String name, java.lang.Integer age, java.lang.String iid,
-			java.lang.String creditRating, java.lang.Double income,
+			java.lang.Integer creditRating, java.lang.Double income,
 			java.lang.String status, java.lang.String message,
 			java.lang.Double margin, java.lang.Double installment,
 			java.lang.Double mortgageAmount) {
