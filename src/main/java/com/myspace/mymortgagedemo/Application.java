@@ -29,8 +29,14 @@ public class Application implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Credit Rating")
 	private java.lang.String creditRating;
 
-	@org.kie.api.definition.type.Label(value = "Applicant Income")
+	@org.kie.api.definition.type.Label("Applicant Income")
 	private java.lang.Double income;
+
+	@org.kie.api.definition.type.Label(value = "Application Status")
+	private java.lang.String status;
+
+	@org.kie.api.definition.type.Label(value = "Message")
+	private java.lang.String message;
 
 	public Application() {
 	}
@@ -107,10 +113,27 @@ public class Application implements java.io.Serializable {
 		this.income = income;
 	}
 
+	public java.lang.String getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(java.lang.String status) {
+		this.status = status;
+	}
+
+	public java.lang.String getMessage() {
+		return this.message;
+	}
+
+	public void setMessage(java.lang.String message) {
+		this.message = message;
+	}
+
 	public Application(java.lang.Double price, java.lang.Double downPayment,
 			java.lang.Integer amortization, java.lang.Double interest,
 			java.lang.String name, java.lang.Integer age, java.lang.String iid,
-			java.lang.String creditRating, java.lang.Double income) {
+			java.lang.String creditRating, java.lang.Double income,
+			java.lang.String status, java.lang.String message) {
 		this.price = price;
 		this.downPayment = downPayment;
 		this.amortization = amortization;
@@ -120,6 +143,8 @@ public class Application implements java.io.Serializable {
 		this.iid = iid;
 		this.creditRating = creditRating;
 		this.income = income;
+		this.status = status;
+		this.message = message;
 	}
 
 }
