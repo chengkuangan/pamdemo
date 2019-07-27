@@ -4,6 +4,9 @@ import java.lang.Number;
 
 rule "Calculate Downpayment"
 	dialect "mvel"
+	ruleflow-group "calculateMortgage"
 	when
+		app : Application( margin > 0.0 , price > 0.0 )
 	then
+		app.setDownPayment( (app.margin/100) * app.price );
 end
