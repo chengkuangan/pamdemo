@@ -4,6 +4,7 @@ import java.lang.Number;
 
 rule "Calculate Instalment"
 	dialect "mvel"
+	ruleflow-group "calculateMortgage"
 	when
 		app : Application( interest > 0.0 && amortization > 0 && interest > 0.0 )
 	then
