@@ -1,0 +1,9 @@
+package com.myspace.mymortgagedemo;
+
+import java.lang.Number;
+
+rule "Validate Application"
+	dialect "mvel"
+	when
+	then
+end
