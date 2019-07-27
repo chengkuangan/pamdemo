@@ -1,0 +1,9 @@
+package com.myspace.mymortgagedemo;
+
+import java.lang.Number;
+
+rule "Calculate Downpayment"
+	dialect "mvel"
+	when
+	then
+end
