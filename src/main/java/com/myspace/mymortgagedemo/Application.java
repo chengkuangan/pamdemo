@@ -6,12 +6,71 @@ package com.myspace.mymortgagedemo;
 
 public class Application implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Application() {
-    }
+	@org.kie.api.definition.type.Label(value = "Property Price")
+	private java.lang.Double price;
+	@org.kie.api.definition.type.Label(value = "Down Payment")
+	private java.lang.Double downPayment;
+	@org.kie.api.definition.type.Label(value = "Loan Tenure")
+	private java.lang.Integer amortization;
+	@org.kie.api.definition.type.Label(value = "Applicant Details")
+	private com.myspace.mymortgagedemo.Applicant applicant;
+	@org.kie.api.definition.type.Label(value = "Interest Rate")
+	private java.lang.Double interest;
 
+	public Application() {
+	}
 
+	public java.lang.Double getPrice() {
+		return this.price;
+	}
 
+	public void setPrice(java.lang.Double price) {
+		this.price = price;
+	}
+
+	public java.lang.Double getDownPayment() {
+		return this.downPayment;
+	}
+
+	public void setDownPayment(java.lang.Double downPayment) {
+		this.downPayment = downPayment;
+	}
+
+	public java.lang.Integer getAmortization() {
+		return this.amortization;
+	}
+
+	public void setAmortization(java.lang.Integer amortization) {
+		this.amortization = amortization;
+	}
+
+	public com.myspace.mymortgagedemo.Applicant getApplicant() {
+		return this.applicant;
+	}
+
+	public void setApplicant(com.myspace.mymortgagedemo.Applicant applicant) {
+		this.applicant = applicant;
+	}
+
+	public java.lang.Double getInterest() {
+		return this.interest;
+	}
+
+	public void setInterest(java.lang.Double interest) {
+		this.interest = interest;
+	}
+
+	public Application(java.lang.Double price, java.lang.Double downPayment,
+			java.lang.Integer amortization,
+			com.myspace.mymortgagedemo.Applicant applicant,
+			java.lang.Double interest) {
+		this.price = price;
+		this.downPayment = downPayment;
+		this.amortization = amortization;
+		this.applicant = applicant;
+		this.interest = interest;
+	}
 
 }
