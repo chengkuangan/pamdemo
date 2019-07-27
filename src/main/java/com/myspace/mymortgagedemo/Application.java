@@ -32,11 +32,17 @@ public class Application implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Applicant Income")
 	private java.lang.Double income;
 
-	@org.kie.api.definition.type.Label(value = "Application Status")
+	@org.kie.api.definition.type.Label("Application Status")
 	private java.lang.String status;
 
-	@org.kie.api.definition.type.Label(value = "Message")
+	@org.kie.api.definition.type.Label("Message")
 	private java.lang.String message;
+
+	@org.kie.api.definition.type.Label(value = "Margin of Finance")
+	private java.lang.Double margin;
+
+	@org.kie.api.definition.type.Label(value = "Monthly Installment")
+	private java.lang.Double installment;
 
 	public Application() {
 	}
@@ -129,11 +135,28 @@ public class Application implements java.io.Serializable {
 		this.message = message;
 	}
 
+	public java.lang.Double getMargin() {
+		return this.margin;
+	}
+
+	public void setMargin(java.lang.Double margin) {
+		this.margin = margin;
+	}
+
+	public java.lang.Double getInstallment() {
+		return this.installment;
+	}
+
+	public void setInstallment(java.lang.Double installment) {
+		this.installment = installment;
+	}
+
 	public Application(java.lang.Double price, java.lang.Double downPayment,
 			java.lang.Integer amortization, java.lang.Double interest,
 			java.lang.String name, java.lang.Integer age, java.lang.String iid,
 			java.lang.String creditRating, java.lang.Double income,
-			java.lang.String status, java.lang.String message) {
+			java.lang.String status, java.lang.String message,
+			java.lang.Double margin, java.lang.Double installment) {
 		this.price = price;
 		this.downPayment = downPayment;
 		this.amortization = amortization;
@@ -145,6 +168,8 @@ public class Application implements java.io.Serializable {
 		this.income = income;
 		this.status = status;
 		this.message = message;
+		this.margin = margin;
+		this.installment = installment;
 	}
 
 }
