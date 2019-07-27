@@ -8,14 +8,17 @@ public class Applicant implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Applicant Name")
+	@org.kie.api.definition.type.Label("Applicant Name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "Identification ID")
+	@org.kie.api.definition.type.Label("Identification ID")
 	private java.lang.String iid;
-	@org.kie.api.definition.type.Label(value = "Annual Income")
+	@org.kie.api.definition.type.Label("Annual Income")
 	private java.lang.Double income;
-	@org.kie.api.definition.type.Label(value = "Credit Rating")
+	@org.kie.api.definition.type.Label("Credit Rating")
 	private java.lang.String creditRating;
+
+	@org.kie.api.definition.type.Label(value = "Applicant Age")
+	private java.lang.Integer age;
 
 	public Applicant() {
 	}
@@ -52,12 +55,22 @@ public class Applicant implements java.io.Serializable {
 		this.creditRating = creditRating;
 	}
 
+	public java.lang.Integer getAge() {
+		return this.age;
+	}
+
+	public void setAge(java.lang.Integer age) {
+		this.age = age;
+	}
+
 	public Applicant(java.lang.String name, java.lang.String iid,
-			java.lang.Double income, java.lang.String creditRating) {
+			java.lang.Double income, java.lang.String creditRating,
+			java.lang.Integer age) {
 		this.name = name;
 		this.iid = iid;
 		this.income = income;
 		this.creditRating = creditRating;
+		this.age = age;
 	}
 
 }
