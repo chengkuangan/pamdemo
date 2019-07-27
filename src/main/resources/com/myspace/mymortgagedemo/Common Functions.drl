@@ -1,2 +1,13 @@
 package com.myspace.mymortgagedemo;
 
+function double calculateInstallment (double amount, double interest, int tenure){
+    
+    	double i = java.lang.Math.pow ( (interest / 100 / 12) + 1, tenure * 12);
+		double l = amount * i;
+		double m = i - 1;
+		double n = interest / 100 / 12; 
+		
+		return ( l / (m / n));
+		
+}
+
