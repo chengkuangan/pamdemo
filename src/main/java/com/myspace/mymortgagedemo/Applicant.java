@@ -6,12 +6,58 @@ package com.myspace.mymortgagedemo;
 
 public class Applicant implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Applicant() {
-    }
+	@org.kie.api.definition.type.Label(value = "Applicant Name")
+	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "Identification ID")
+	private java.lang.String iid;
+	@org.kie.api.definition.type.Label(value = "Annual Income")
+	private java.lang.Double income;
+	@org.kie.api.definition.type.Label(value = "Credit Rating")
+	private java.lang.String creditRating;
 
+	public Applicant() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getIid() {
+		return this.iid;
+	}
+
+	public void setIid(java.lang.String iid) {
+		this.iid = iid;
+	}
+
+	public java.lang.Double getIncome() {
+		return this.income;
+	}
+
+	public void setIncome(java.lang.Double income) {
+		this.income = income;
+	}
+
+	public java.lang.String getCreditRating() {
+		return this.creditRating;
+	}
+
+	public void setCreditRating(java.lang.String creditRating) {
+		this.creditRating = creditRating;
+	}
+
+	public Applicant(java.lang.String name, java.lang.String iid,
+			java.lang.Double income, java.lang.String creditRating) {
+		this.name = name;
+		this.iid = iid;
+		this.income = income;
+		this.creditRating = creditRating;
+	}
 
 }
