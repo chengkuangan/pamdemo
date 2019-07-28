@@ -11,4 +11,5 @@ rule "Calculate Downpayment"
 	then
 		app.setDownPayment( (app.margin/100) * app.price );
 		app.setMortgageAmount( app.price - app.downPayment );
+		app.setInstallment( calculateInstallment (app.mortgageAmount, app.interest, app.amortization) );
 end
