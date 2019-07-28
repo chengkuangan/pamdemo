@@ -523,7 +523,7 @@
               <name>1564319812770</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">4.5D</rawValue>
+            <rawValue class="string">4.35D</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
