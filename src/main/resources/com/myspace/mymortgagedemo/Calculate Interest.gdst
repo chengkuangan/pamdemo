@@ -12,13 +12,26 @@
   <attributeCols>
     <attribute-column52>
       <typedDefaultValue>
-        <valueString>TestRules1</valueString>
+        <valueString>calculateMortgage</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
       <width>100</width>
       <attribute>ruleflow-group</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </attribute-column52>
+    <attribute-column52>
+      <typedDefaultValue>
+        <valueNumeric class="int">50</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>130</width>
+      <attribute>salience</attribute>
       <reverseOrder>false</reverseOrder>
       <useRowNumber>false</useRowNumber>
     </attribute-column52>
@@ -173,6 +186,7 @@
     <list>
       <value>
         <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -182,8 +196,13 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>TestRules1</valueString>
+        <valueString>calculateMortgage</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -208,6 +227,7 @@
     <list>
       <value>
         <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -217,8 +237,13 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>TestRules1</valueString>
+        <valueString>calculateMortgage</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -243,6 +268,7 @@
     <list>
       <value>
         <valueNumeric class="int">3</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -252,8 +278,13 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>TestRules1</valueString>
+        <valueString>calculateMortgage</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -278,6 +309,7 @@
     <list>
       <value>
         <valueNumeric class="int">4</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -287,8 +319,13 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>TestRules1</valueString>
+        <valueString>calculateMortgage</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
