@@ -2,6 +2,9 @@ package com.myspace.mymortgagedemo;
 
 function double calculateInstallment (double amount, double interest, int tenure){
     
+        System.out.println("amount = " + amount);
+        System.out.println("interest = " + interest);
+        System.out.println("tenure = " + tenure);
     	double i = java.lang.Math.pow ( (interest / 100 / 12) + 1, tenure * 12);
 		double l = amount * i;
 		double m = i - 1;
