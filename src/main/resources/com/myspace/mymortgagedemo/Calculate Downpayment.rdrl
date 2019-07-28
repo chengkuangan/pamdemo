@@ -4,7 +4,7 @@ import java.lang.Number;
 
 rule "Calculate Downpayment"
 	dialect "mvel"
-	ruleflow-group "calculateMortgage"
+	ruleflow-group "calculateMortgage3"
 	salience 40
 	when
 		app : Application( margin > 0.0 , price > 0.0 )
