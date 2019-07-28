@@ -81,7 +81,7 @@
             </constraints>
           </constraintList>
           <factType>Application</factType>
-          <boundName>app</boundName>
+          <boundName>application</boundName>
           <isNegated>false</isNegated>
           <window>
             <parameters/>
@@ -126,10 +126,9 @@
       <hideColumn>false</hideColumn>
       <width>100</width>
       <header>Interest</header>
-      <boundName>app</boundName>
+      <boundName>application</boundName>
       <factField>interest</factField>
       <type>Double</type>
-      <valueList></valueList>
       <update>false</update>
     </set-field-col52>
   </actionCols>
