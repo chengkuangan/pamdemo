@@ -441,6 +441,7 @@
               <name>Description</name>
               <type>OTHER</type>
             </expressionIdentifier>
+            <rawValue class="string">Test 2</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
