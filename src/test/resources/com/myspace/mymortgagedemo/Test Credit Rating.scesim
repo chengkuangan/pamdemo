@@ -113,6 +113,42 @@
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
+            <name>1564319610093</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.lang.Integer</className>
+          <factAlias>Application</factAlias>
+          <expressionAlias>creditRating</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Application</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>amortization</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1564319783581</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.lang.Integer</className>
+          <factAlias>Application</factAlias>
+          <expressionAlias>amortization</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Application</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>creditRating</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
             <name>0|2</name>
             <type>EXPECT</type>
           </expressionIdentifier>
@@ -120,6 +156,60 @@
           <className>java.lang.Integer</className>
           <factAlias>Application</factAlias>
           <expressionAlias>creditRating</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Application</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>mortgageAmount</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1564319631540</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.lang.Double</className>
+          <factAlias>Application</factAlias>
+          <expressionAlias>mortgageAmount</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Application</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>installment</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1564319772727</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.lang.Double</className>
+          <factAlias>Application</factAlias>
+          <expressionAlias>installment</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Application</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>interest</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1564319812770</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.lang.Double</className>
+          <factAlias>Application</factAlias>
+          <expressionAlias>interest</expressionAlias>
         </FactMapping>
       </factMappings>
       <type>RULE</type>
@@ -179,14 +269,72 @@
             <rawValue class="string">325</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/expressionIdentifier"/>
+            <factIdentifier>
+              <name>0|1</name>
+              <className>com.myspace.mymortgagedemo.Application</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1564319478091</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
             <rawValue class="string">90</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/expressionIdentifier"/>
+            <factIdentifier reference="../../FactMappingValue[6]/factIdentifier"/>
+            <expressionIdentifier>
+              <name>1564319488680</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
             <rawValue class="string">250000</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>0|1</name>
+              <className>com.myspace.mymortgagedemo.Application</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1564319610093</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">325</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>0|1</name>
+              <className>com.myspace.mymortgagedemo.Application</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1564319631540</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">24999.999999999993D</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>0|1</name>
+              <className>com.myspace.mymortgagedemo.Application</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1564319783581</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">25</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../FactMappingValue[10]/factIdentifier"/>
+            <expressionIdentifier>
+              <name>1564319772727</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">1250</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../FactMappingValue[10]/factIdentifier"/>
+            <expressionIdentifier>
+              <name>1564319812770</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">4.375D</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
