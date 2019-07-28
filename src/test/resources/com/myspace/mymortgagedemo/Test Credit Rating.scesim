@@ -325,6 +325,7 @@
               <name>1564319772727</name>
               <type>EXPECT</type>
             </expressionIdentifier>
+            <rawValue class="string">225000</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../FactMappingValue[10]/factIdentifier"/>
@@ -332,7 +333,7 @@
               <name>1564319812770</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">4.375D</rawValue>
+            <rawValue class="string">null</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
