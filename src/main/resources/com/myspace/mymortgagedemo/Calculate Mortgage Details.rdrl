@@ -2,7 +2,7 @@ package com.myspace.mymortgagedemo;
 
 import java.lang.Number;
 
-rule "Calculate Downpayment"
+rule "Calculate Mortgage Details"
 	dialect "mvel"
 	ruleflow-group "calculateMortgage"
 	salience 0
