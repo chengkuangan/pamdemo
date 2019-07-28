@@ -47,6 +47,9 @@ public class Application implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Mortgage Amount")
 	private java.lang.Double mortgageAmount;
 
+	@org.kie.api.definition.type.Label(value = "Application Approved?")
+	private java.lang.Boolean approved;
+
 	public Application() {
 	}
 
@@ -162,13 +165,21 @@ public class Application implements java.io.Serializable {
 		this.creditRating = creditRating;
 	}
 
+	public java.lang.Boolean getApproved() {
+		return this.approved;
+	}
+
+	public void setApproved(java.lang.Boolean approved) {
+		this.approved = approved;
+	}
+
 	public Application(java.lang.Double price, java.lang.Double downPayment,
 			java.lang.Integer amortization, java.lang.Double interest,
 			java.lang.String name, java.lang.Integer age, java.lang.String iid,
 			java.lang.Integer creditRating, java.lang.Double income,
 			java.lang.String status, java.lang.String message,
 			java.lang.Double margin, java.lang.Double installment,
-			java.lang.Double mortgageAmount) {
+			java.lang.Double mortgageAmount, java.lang.Boolean approved) {
 		this.price = price;
 		this.downPayment = downPayment;
 		this.amortization = amortization;
@@ -183,6 +194,7 @@ public class Application implements java.io.Serializable {
 		this.margin = margin;
 		this.installment = installment;
 		this.mortgageAmount = mortgageAmount;
+		this.approved = approved;
 	}
 
 }
