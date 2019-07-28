@@ -127,6 +127,24 @@
               <step>Application</step>
             </ExpressionElement>
             <ExpressionElement>
+              <step>creditRating</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1564328694921</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.lang.Integer</className>
+          <factAlias>Application</factAlias>
+          <expressionAlias>creditRating</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Application</step>
+            </ExpressionElement>
+            <ExpressionElement>
               <step>interest</step>
             </ExpressionElement>
           </expressionElements>
@@ -323,7 +341,7 @@
               <name>1564319812770</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">4.375</rawValue>
+            <rawValue class="string">4.5D</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -334,6 +352,17 @@
               <name>1564325624370</name>
               <type>GIVEN</type>
             </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>0|1</name>
+              <className>com.myspace.mymortgagedemo.Application</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1564328694921</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">325</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
@@ -494,7 +523,7 @@
               <name>1564319812770</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">4.35</rawValue>
+            <rawValue class="string">4.5D</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -506,6 +535,11 @@
               <type>OTHER</type>
             </expressionIdentifier>
             <rawValue class="string">2</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[13]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[13]/expressionIdentifier"/>
+            <rawValue class="string">365</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
