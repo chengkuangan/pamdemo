@@ -73,6 +73,42 @@
               <step>Application</step>
             </ExpressionElement>
             <ExpressionElement>
+              <step>margin</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1564319478091</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.lang.Double</className>
+          <factAlias>Application</factAlias>
+          <expressionAlias>margin</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Application</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>price</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1564319488680</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.lang.Double</className>
+          <factAlias>Application</factAlias>
+          <expressionAlias>price</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Application</step>
+            </ExpressionElement>
+            <ExpressionElement>
               <step>creditRating</step>
             </ExpressionElement>
           </expressionElements>
@@ -141,6 +177,16 @@
               <type>EXPECT</type>
             </expressionIdentifier>
             <rawValue class="string">325</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/expressionIdentifier"/>
+            <rawValue class="string">90</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/expressionIdentifier"/>
+            <rawValue class="string">250000</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
