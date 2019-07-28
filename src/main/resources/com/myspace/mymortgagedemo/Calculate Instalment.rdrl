@@ -5,7 +5,7 @@ import java.lang.Number;
 rule "Calculate Instalment"
 	dialect "mvel"
 	ruleflow-group "calculateMortgage2"
-	salience 30
+	salience -1
 	when
 		app : Application( interest > 0.0 && amortization > 0 && mortgageAmount > 0.0 )
 	then
