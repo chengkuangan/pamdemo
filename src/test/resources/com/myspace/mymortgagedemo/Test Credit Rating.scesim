@@ -459,7 +459,7 @@
               <name>1564319146939</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">250000</rawValue>
+            <rawValue class="string">300000</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../FactMappingValue[2]/factIdentifier"/>
@@ -505,6 +505,7 @@
               <name>0|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
+            <rawValue class="string">365</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../FactMappingValue[2]/factIdentifier"/>
@@ -512,6 +513,7 @@
               <name>1564319631540</name>
               <type>EXPECT</type>
             </expressionIdentifier>
+            <rawValue class="string">29999.999999999993D</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../FactMappingValue[2]/factIdentifier"/>
@@ -526,6 +528,7 @@
               <name>1564319812770</name>
               <type>EXPECT</type>
             </expressionIdentifier>
+            <rawValue class="string">4.35</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
