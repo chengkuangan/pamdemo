@@ -213,7 +213,7 @@
         </FactMapping>
       </factMappings>
       <type>RULE</type>
-      <ruleFlowGroup>TestRules</ruleFlowGroup>
+      <ruleFlowGroup>calculateMortgage</ruleFlowGroup>
       <skipFromBuild>false</skipFromBuild>
     </simulationDescriptor>
     <scenarios>
