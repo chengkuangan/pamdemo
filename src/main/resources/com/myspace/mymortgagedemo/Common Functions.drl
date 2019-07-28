@@ -9,8 +9,14 @@ function double calculateInstallment (double amount, double interest, int tenure
 		double l = amount * i;
 		double m = i - 1;
 		double n = interest / 100 / 12; 
+		double result = ( l / (m / n));
+		System.out.println("i = " + i);
+		System.out.println("l = " + l);
+		System.out.println("m = " + m);
+		System.out.println("n = " + n);
+		System.out.println("result = " + result);
 		
-		return ( l / (m / n));
+		return result;
 		
 }
 
