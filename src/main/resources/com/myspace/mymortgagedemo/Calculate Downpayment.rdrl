@@ -9,4 +9,5 @@ rule "Calculate Downpayment"
 		app : Application( margin > 0.0 , price > 0.0 )
 	then
 		app.setDownPayment( (app.margin/100) * app.price );
+		app.setMortgageAmount( (1 - (app.margin/100)) * app.price );
 end
