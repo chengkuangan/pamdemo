@@ -314,7 +314,7 @@
               <name>1564319631540</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">85000.0D</rawValue>
+            <rawValue class="string">850000.0D</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -333,7 +333,7 @@
               <name>1564319772727</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">472.4576062676961D</rawValue>
+            <rawValue class="string">4724.576062676961D</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../FactMappingValue[9]/factIdentifier"/>
@@ -478,7 +478,7 @@
               <name>1564319488680</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">300000D</rawValue>
+            <rawValue class="string">300000.00</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../FactMappingValue[2]/factIdentifier"/>
