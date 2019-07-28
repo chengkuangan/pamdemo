@@ -333,7 +333,7 @@
               <name>1564319812770</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">null</rawValue>
+            <rawValue class="string">4.375</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
