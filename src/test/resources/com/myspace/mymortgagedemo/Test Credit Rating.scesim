@@ -109,24 +109,6 @@
               <step>Application</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>creditRating</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1564319610093</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
-          <className>java.lang.Integer</className>
-          <factAlias>Application</factAlias>
-          <expressionAlias>creditRating</expressionAlias>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>Application</step>
-            </ExpressionElement>
-            <ExpressionElement>
               <step>amortization</step>
             </ExpressionElement>
           </expressionElements>
@@ -311,16 +293,6 @@
               <className>com.myspace.mymortgagedemo.Application</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1564319610093</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>0|1</name>
-              <className>com.myspace.mymortgagedemo.Application</className>
-            </factIdentifier>
-            <expressionIdentifier>
               <name>1564319631540</name>
               <type>EXPECT</type>
             </expressionIdentifier>
@@ -338,7 +310,7 @@
             <rawValue class="string">25</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../FactMappingValue[10]/factIdentifier"/>
+            <factIdentifier reference="../../FactMappingValue[9]/factIdentifier"/>
             <expressionIdentifier>
               <name>1564319772727</name>
               <type>EXPECT</type>
@@ -346,7 +318,7 @@
             <rawValue class="string">225000</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../FactMappingValue[10]/factIdentifier"/>
+            <factIdentifier reference="../../FactMappingValue[9]/factIdentifier"/>
             <expressionIdentifier>
               <name>1564319812770</name>
               <type>EXPECT</type>
@@ -481,13 +453,6 @@
           <FactMappingValue>
             <factIdentifier reference="../../FactMappingValue[2]/factIdentifier"/>
             <expressionIdentifier>
-              <name>1564319610093</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../FactMappingValue[2]/factIdentifier"/>
-            <expressionIdentifier>
               <name>1564319783581</name>
               <type>GIVEN</type>
             </expressionIdentifier>
@@ -547,8 +512,8 @@
           <factMappings>
             <FactMapping>
               <expressionElements/>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[13]/expressionIdentifier"/>
-              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[13]/factIdentifier"/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[12]/expressionIdentifier"/>
+              <factIdentifier reference="../../../../factMappingValues/FactMappingValue[12]/factIdentifier"/>
               <className>java.lang.Integer</className>
               <factAlias>#</factAlias>
             </FactMapping>
@@ -628,7 +593,10 @@
                   <step>creditRating</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[6]/expressionIdentifier"/>
+              <expressionIdentifier>
+                <name>1564319610093</name>
+                <type>GIVEN</type>
+              </expressionIdentifier>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
               <className>java.lang.Integer</className>
               <factAlias>Application</factAlias>
@@ -643,7 +611,7 @@
                   <step>amortization</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[7]/expressionIdentifier"/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[6]/expressionIdentifier"/>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
               <className>java.lang.Integer</className>
               <factAlias>Application</factAlias>
@@ -658,7 +626,7 @@
                   <step>interest</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[8]/expressionIdentifier"/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[7]/expressionIdentifier"/>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
               <className>java.lang.Double</className>
               <factAlias>Application</factAlias>
@@ -673,7 +641,7 @@
                   <step>creditRating</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[9]/expressionIdentifier"/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[8]/expressionIdentifier"/>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
               <className>java.lang.Integer</className>
               <factAlias>Application</factAlias>
@@ -688,7 +656,7 @@
                   <step>mortgageAmount</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[10]/expressionIdentifier"/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[9]/expressionIdentifier"/>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
               <className>java.lang.Double</className>
               <factAlias>Application</factAlias>
@@ -703,7 +671,7 @@
                   <step>installment</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[11]/expressionIdentifier"/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[10]/expressionIdentifier"/>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
               <className>java.lang.Double</className>
               <factAlias>Application</factAlias>
@@ -718,7 +686,7 @@
                   <step>interest</step>
                 </ExpressionElement>
               </expressionElements>
-              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[12]/expressionIdentifier"/>
+              <expressionIdentifier reference="../../../../factMappingValues/FactMappingValue[11]/expressionIdentifier"/>
               <factIdentifier reference="../../../../factMappingValues/FactMappingValue[2]/factIdentifier"/>
               <className>java.lang.Double</className>
               <factAlias>Application</factAlias>
