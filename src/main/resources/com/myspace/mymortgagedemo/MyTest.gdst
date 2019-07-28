@@ -245,6 +245,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueNumeric class="int">325</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
