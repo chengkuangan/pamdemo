@@ -10,4 +10,8 @@ rule "Calculate Instalment"
 		app : Application( interest > 0.0 && amortization > 0 && mortgageAmount > 0.0 )
 	then
 		app.setInstallment( calculateInstallment (app.mortgageAmount, app.interest, app.amortization) );
+		System.out.println("Amount : " + app.mortgageAmount);
+		System.out.println("Interest : " + app.interest);
+		System.out.println("amortization : " + app.amortization);
+		System.out.println("Amount : " + app.mortgageAmount);
 end
