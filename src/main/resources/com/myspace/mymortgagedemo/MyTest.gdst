@@ -94,6 +94,7 @@
             </constraints>
           </constraintList>
           <factType>Application</factType>
+          <boundName>app</boundName>
           <isNegated>false</isNegated>
           <window>
             <parameters/>
@@ -153,7 +154,7 @@
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
   <actionCols>
-    <insert-fact-column52>
+    <set-field-col52>
       <typedDefaultValue>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
@@ -161,13 +162,12 @@
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
       <width>100</width>
-      <header>Credit Rating</header>
-      <factType>Application</factType>
+      <header>Core Card</header>
       <boundName>app</boundName>
       <factField>creditRating</factField>
       <type>Integer</type>
-      <isInsertLogical>false</isInsertLogical>
-    </insert-fact-column52>
+      <update>false</update>
+    </set-field-col52>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -245,7 +245,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">325</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
