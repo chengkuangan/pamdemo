@@ -24,7 +24,7 @@
     </attribute-column52>
     <attribute-column52>
       <typedDefaultValue>
-        <valueNumeric class="int">100</valueNumeric>
+        <valueNumeric class="int">0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
