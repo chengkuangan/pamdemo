@@ -183,7 +183,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>TestRules1</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -219,7 +219,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>TestRules1</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -255,7 +255,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>TestRules1</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -291,7 +291,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>TestRules1</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
