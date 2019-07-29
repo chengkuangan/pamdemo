@@ -231,7 +231,7 @@
         </FactMapping>
       </factMappings>
       <type>RULE</type>
-      <ruleFlowGroup>calculateMortgage1</ruleFlowGroup>
+      <ruleFlowGroup>calculateMortgage</ruleFlowGroup>
       <skipFromBuild>false</skipFromBuild>
     </simulationDescriptor>
     <scenarios>
@@ -360,6 +360,7 @@
               <name>1564328694921</name>
               <type>GIVEN</type>
             </expressionIdentifier>
+            <rawValue class="string">325</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
