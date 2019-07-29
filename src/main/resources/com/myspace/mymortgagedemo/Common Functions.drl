@@ -2,6 +2,9 @@ package com.myspace.mymortgagedemo;
 
 function double calculateInstallment (double amount, double interest, int tenure){
     
+        if (amount == null || interest == null || tenure == 0){
+            return 0.0;
+        }
         System.out.println("amount = " + amount);
         System.out.println("interest = " + interest);
         System.out.println("tenure = " + tenure);
