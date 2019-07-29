@@ -13,4 +13,5 @@ rule "Calculate Mortgage Details"
 		loan.setDownPayment( (1-(app.margin/100)) * app.price );
 		loan.setMortgageAmount( app.price - loan.downPayment );
 		loan.setInstalment( calculateInstallment (loan.mortgageAmount, loan.interest, app.amortization) );
+		System.out.println("Setting downPayment, mortgageAmount and instalment")
 end
