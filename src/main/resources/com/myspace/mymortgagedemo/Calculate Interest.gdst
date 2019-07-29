@@ -25,7 +25,7 @@
     </attribute-column52>
     <attribute-column52>
       <typedDefaultValue>
-        <valueString>calculateMortgage1</valueString>
+        <valueString>calculateMortgage</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
@@ -198,7 +198,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage1</valueString>
+        <valueString>calculateMortgage</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -246,7 +246,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage1</valueString>
+        <valueString>calculateMortgage</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -294,7 +294,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage1</valueString>
+        <valueString>calculateMortgage</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -342,7 +342,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage1</valueString>
+        <valueString>calculateMortgage</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
