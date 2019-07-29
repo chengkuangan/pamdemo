@@ -30,6 +30,9 @@ public class Application implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Credit Rating")
 	private java.lang.Integer creditRating;
 
+	@org.kie.api.definition.type.Label(value = "Error Message")
+	private java.lang.String message;
+
 	public Application() {
 	}
 
@@ -97,10 +100,18 @@ public class Application implements java.io.Serializable {
 		this.creditRating = creditRating;
 	}
 
+	public java.lang.String getMessage() {
+		return this.message;
+	}
+
+	public void setMessage(java.lang.String message) {
+		this.message = message;
+	}
+
 	public Application(java.lang.Double price, java.lang.Integer amortization,
 			java.lang.String name, java.lang.Integer age, java.lang.String iid,
 			java.lang.Double income, java.lang.Double margin,
-			java.lang.Integer creditRating) {
+			java.lang.Integer creditRating, java.lang.String message) {
 		this.price = price;
 		this.amortization = amortization;
 		this.name = name;
@@ -109,6 +120,7 @@ public class Application implements java.io.Serializable {
 		this.income = income;
 		this.margin = margin;
 		this.creditRating = creditRating;
+		this.message = message;
 	}
 
 }
