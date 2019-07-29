@@ -12,7 +12,7 @@
   <attributeCols>
     <attribute-column52>
       <typedDefaultValue>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
@@ -229,7 +229,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -283,7 +283,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -337,7 +337,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -391,7 +391,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -445,7 +445,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -499,7 +499,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -553,7 +553,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -607,7 +607,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -661,7 +661,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -715,7 +715,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -769,7 +769,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -823,7 +823,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -877,7 +877,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -931,7 +931,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -985,7 +985,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1039,7 +1039,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1093,7 +1093,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1147,7 +1147,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1201,7 +1201,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1255,7 +1255,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>calculateMortgage</valueString>
+        <valueString>creditscore-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
