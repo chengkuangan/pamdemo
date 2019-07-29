@@ -352,7 +352,6 @@
               <name>1564325624370</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">4.5</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -363,7 +362,6 @@
               <name>1564328694921</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">325</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
@@ -494,7 +492,6 @@
               <name>1564325624370</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">4.35</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../FactMappingValue[2]/factIdentifier"/>
@@ -542,7 +539,6 @@
           <FactMappingValue>
             <factIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[13]/factIdentifier"/>
             <expressionIdentifier reference="../../../../Scenario/factMappingValues/FactMappingValue[13]/expressionIdentifier"/>
-            <rawValue class="string">385</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
