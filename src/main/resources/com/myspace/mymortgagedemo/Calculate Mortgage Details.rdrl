@@ -9,7 +9,7 @@ rule "Calculate Mortgage Details"
 	when
 		app : Application( margin > 0.0 , price > 0.0 , interest > 0.0 )
 	then
-		app.setDownPayment( (app.margin/100) * app.price );
+		app.setDownPayment( (1-(app.margin/100)) * app.price );
 		app.setMortgageAmount( app.price - app.downPayment );
 		app.setInstallment( calculateInstallment (app.mortgageAmount, app.interest, app.amortization) );
 		System.out.println ( "---> app.price = " + app.price );
