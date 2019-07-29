@@ -7,8 +7,6 @@ rule "Validate Application"
 	ruleflow-group "validation"
 	when
 		app : Application( age < 21 || age >= 65 || income < 21600 )
-		error : ErrorMessage( )
 	then
-		error.setStatus( "Required Review" );
-		error.setMessage( "Please check application data validity. Applicant age must be between 21 and 65. Annual income must be more than 21,600.00" );
+		app.setMessage( "Applicant age must be between 21 and 65 with annual income more than $21,600" );
 end
