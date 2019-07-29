@@ -7,11 +7,10 @@ rule "Calculate Mortgage Details"
 	ruleflow-group "calculateMortgage"
 	salience 0
 	when
-		exists (app : Application( price > 0.0 && margin > 0.0 && amortization > 0 ) and loan : LoanDetails( interest > 0.0 )) 
+		app : Application( amortization > 0 && price > 0.0 && margin > 0.0 )
+		loan : LoanDetails( interest > 0.0 )
 	then
-		modify( loan ) {
-				setDownPayment( (1-(app.margin/100)) * app.price ), 
-				setMortgageAmount( app.price - loan.downPayment ), 
-				setInstalment( calculateInstallment (loan.mortgageAmount, loan.interest, app.amortization) )
-		}
+		loan.setDownPayment( (1-(app.margin/100)) * app.price );
+		loan.setMortgageAmount( app.price - loan.downPayment );
+		loan.setInstalment( calculateInstallment (loan.mortgageAmount, loan.interest, app.amortization) );
 end
