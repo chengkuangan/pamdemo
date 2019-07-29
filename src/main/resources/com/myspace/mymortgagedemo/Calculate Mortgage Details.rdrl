@@ -12,4 +12,8 @@ rule "Calculate Mortgage Details"
 		app.setDownPayment( (app.margin/100) * app.price );
 		app.setMortgageAmount( app.price - app.downPayment );
 		app.setInstallment( calculateInstallment (app.mortgageAmount, app.interest, app.amortization) );
+		System.out.println ( "---> app.price = " + app.price );
+		System.out.println ( "---> app.downPayment = " + app.downPayment );
+		System.out.println ( "---> app.mortgageAmount = " + app.mortgageAmount );
+		System.out.println ( "---> (app.price - app.downPayment) = " + (app.price - app.downPayment) );
 end
