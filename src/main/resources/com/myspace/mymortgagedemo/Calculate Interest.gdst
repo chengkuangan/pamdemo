@@ -47,32 +47,37 @@
         <org.drools.workbench.models.datamodel.rule.FactPattern>
           <constraintList>
             <constraints>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <value>$gt</value>
-                <operator>&gt;</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>LoanDetails</factType>
-                <fieldName>creditRating</fieldName>
-                <fieldType>Integer</fieldType>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <value>$lte</value>
-                <operator>&gt;=</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>LoanDetails</factType>
-                <fieldName>creditRating</fieldName>
-                <fieldType>Integer</fieldType>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+              <org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+                <compositeJunctionType>&amp;&amp;</compositeJunctionType>
+                <constraints>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <value>$greaterThan</value>
+                    <operator>&gt;</operator>
+                    <constraintValueType>7</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>LoanDetails</factType>
+                    <fieldName>creditRating</fieldName>
+                    <fieldType>Integer</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <value>$lessThanOrEqual</value>
+                    <operator>&gt;=</operator>
+                    <constraintValueType>7</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>LoanDetails</factType>
+                    <fieldName>creditRating</fieldName>
+                    <fieldType>Integer</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                </constraints>
+              </org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
             </constraints>
           </constraintList>
           <factType>LoanDetails</factType>
@@ -93,7 +98,7 @@
           <fieldType>Integer</fieldType>
           <operator>&gt;</operator>
           <parameters/>
-          <varName>$gt</varName>
+          <varName>$greaterThan</varName>
           <factType>LoanDetails</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
@@ -105,7 +110,7 @@
           <fieldType>Integer</fieldType>
           <operator>&gt;=</operator>
           <parameters/>
-          <varName>$lte</varName>
+          <varName>$lessThanOrEqual</varName>
           <factType>LoanDetails</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
