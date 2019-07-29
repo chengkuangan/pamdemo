@@ -6,7 +6,8 @@ rule "Validate Application"
 	dialect "mvel"
 	ruleflow-group "validation"
 	when
-		app : Application( age < 21 || age >= 65 || income < 21600 , error : error != null )
+		app : Application( age < 21 || age >= 65 || income < 21600 )
+		error : ErrorMessage( )
 	then
 		modify( error ) {
 				setStatus( "Required Review" ), 
