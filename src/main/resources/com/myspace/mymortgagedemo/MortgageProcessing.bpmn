@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_JoLH0LHbEem11O0SX9yfRw" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_nHAu8LHcEem11O0SX9yfRw" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_applicationItem" structureRef="com.myspace.mymortgagedemo.Application"/>
   <bpmn2:itemDefinition id="_approvalItem" structureRef="com.myspace.mymortgagedemo.Approval"/>
   <bpmn2:itemDefinition id="_errorItem" structureRef="com.myspace.mymortgagedemo.ErrorMessage"/>
@@ -54,12 +54,8 @@
   <bpmn2:itemDefinition id="__415CB942-DA2E-4C2C-837E-63D72282E4FC_NotCompletedNotifyInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__415CB942-DA2E-4C2C-837E-63D72282E4FC_applicationInputXItem" structureRef="com.myspace.mymortgagedemo.Application"/>
   <bpmn2:itemDefinition id="__415CB942-DA2E-4C2C-837E-63D72282E4FC_errorInputXItem" structureRef="com.myspace.mymortgagedemo.ErrorMessage"/>
-  <bpmn2:itemDefinition id="__415CB942-DA2E-4C2C-837E-63D72282E4FC_loanInputXItem" structureRef="com.myspace.mymortgagedemo.LoanDetails"/>
-  <bpmn2:itemDefinition id="__415CB942-DA2E-4C2C-837E-63D72282E4FC_approvalInputXItem" structureRef="com.myspace.mymortgagedemo.Approval"/>
   <bpmn2:itemDefinition id="__415CB942-DA2E-4C2C-837E-63D72282E4FC_applicationOutputXItem" structureRef="com.myspace.mymortgagedemo.Application"/>
   <bpmn2:itemDefinition id="__415CB942-DA2E-4C2C-837E-63D72282E4FC_errorOutputXItem" structureRef="com.myspace.mymortgagedemo.ErrorMessage"/>
-  <bpmn2:itemDefinition id="__415CB942-DA2E-4C2C-837E-63D72282E4FC_loanOutputXItem" structureRef="com.myspace.mymortgagedemo.LoanDetails"/>
-  <bpmn2:itemDefinition id="__415CB942-DA2E-4C2C-837E-63D72282E4FC_approvalOutputXItem" structureRef="com.myspace.mymortgagedemo.Approval"/>
   <bpmn2:itemDefinition id="__39EA3C58-83C1-4361-AC94-31BDC21FE034_namespaceInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__39EA3C58-83C1-4361-AC94-31BDC21FE034_modelInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__39EA3C58-83C1-4361-AC94-31BDC21FE034_decisionInputXItem" structureRef="java.lang.String"/>
@@ -126,7 +122,7 @@
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_JoLH0bHbEem11O0SX9yfRw" language="http://www.java.com/java"><![CDATA[return KieFunctions.isEmpty(application.getMessage());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_nHAu8bHcEem11O0SX9yfRw" language="http://www.java.com/java"><![CDATA[return KieFunctions.isEmpty(application.getMessage());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_F1BB2703-302B-49B1-B1E3-628F104E2DE1" sourceRef="_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B" targetRef="_415CB942-DA2E-4C2C-837E-63D72282E4FC">
       <bpmn2:extensionElements>
@@ -166,7 +162,7 @@
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_0DC438E2-0631-425B-BD6A-DD053E3DF55F" sourceRef="_4FEFE7CB-59C1-408B-9E12-A82761F1E867" targetRef="_B7A82B77-F86D-4B03-9E22-B25825B9611A">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_JoLH0rHbEem11O0SX9yfRw" language="http://www.java.com/java"><![CDATA[return approval.getApproved();]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_nHAu8rHcEem11O0SX9yfRw" language="http://www.java.com/java"><![CDATA[return approval.getApproved();]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_510D6C48-C22F-4379-B03E-1EE6395EF715" sourceRef="_4FEFE7CB-59C1-408B-9E12-A82761F1E867" targetRef="_19E7186D-7659-435A-9340-D81A62BE669F">
       <bpmn2:extensionElements>
@@ -174,7 +170,7 @@
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_JoLH07HbEem11O0SX9yfRw" language="http://www.java.com/java"><![CDATA[return !approval.getApproved();]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_nHAu87HcEem11O0SX9yfRw" language="http://www.java.com/java"><![CDATA[return !approval.getApproved();]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_547238AC-0EC3-44CB-8384-D769AFD8E852" sourceRef="_415CB942-DA2E-4C2C-837E-63D72282E4FC" targetRef="_4FEFE7CB-59C1-408B-9E12-A82761F1E867">
       <bpmn2:extensionElements>
@@ -187,7 +183,7 @@
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_AF3B3D2A-3594-407D-8DBF-4073F14696AF" sourceRef="_7CC6BE17-EEE6-49FB-849C-2240BE02D79C" targetRef="_39EA3C58-83C1-4361-AC94-31BDC21FE034">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_JoLH1LHbEem11O0SX9yfRw" language="http://www.java.com/java"><![CDATA[return KieFunctions.isEmpty(application.getMessage());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_nHAu9LHcEem11O0SX9yfRw" language="http://www.java.com/java"><![CDATA[return KieFunctions.isEmpty(application.getMessage());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_D6DCF276-4D96-4DFC-81D2-B13CCA103863" sourceRef="_7CC6BE17-EEE6-49FB-849C-2240BE02D79C" targetRef="_19E7186D-7659-435A-9340-D81A62BE669F">
       <bpmn2:extensionElements>
@@ -198,7 +194,7 @@
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_JoLH1bHbEem11O0SX9yfRw" language="http://www.java.com/java"><![CDATA[return !KieFunctions.isEmpty(application.getMessage());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_nHAu9bHcEem11O0SX9yfRw" language="http://www.java.com/java"><![CDATA[return !KieFunctions.isEmpty(application.getMessage());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_FC90C473-D8F6-456E-BF4B-0D60BA071AA9" sourceRef="_217D8084-7299-4E4F-898A-99FE4218CCF6" targetRef="_7CC6BE17-EEE6-49FB-849C-2240BE02D79C"/>
     <bpmn2:sequenceFlow id="_BFBC6C0E-6B57-4F12-8FFF-C85C7EAAE3EA" sourceRef="_34D607FD-4817-4317-950D-87489CB5DF18" targetRef="_D4AD9FB5-16AE-403F-BD4C-795F92A85C70">
@@ -252,7 +248,7 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_92AE3915-F1BB-4A34-A0C0-07FA672D97C3</bpmn2:incoming>
       <bpmn2:outgoing>_487C5A5E-53CE-42A3-8637-E44FBCE2304F</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_JoLH1rHbEem11O0SX9yfRw">
+      <bpmn2:ioSpecification id="_nHAu9rHcEem11O0SX9yfRw">
         <bpmn2:dataInput id="_EABDF919-01D2-400E-93E1-66A0650AE261_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__EABDF919-01D2-400E-93E1-66A0650AE261_TaskNameInputXItem" name="TaskName"/>
         <bpmn2:dataInput id="_EABDF919-01D2-400E-93E1-66A0650AE261_applicationInputX" drools:dtype="com.myspace.mymortgagedemo.Application" itemSubjectRef="__EABDF919-01D2-400E-93E1-66A0650AE261_applicationInputXItem" name="application"/>
         <bpmn2:dataInput id="_EABDF919-01D2-400E-93E1-66A0650AE261_errorInputX" drools:dtype="com.myspace.mymortgagedemo.ErrorMessage" itemSubjectRef="__EABDF919-01D2-400E-93E1-66A0650AE261_errorInputXItem" name="error"/>
@@ -264,7 +260,7 @@
         <bpmn2:dataOutput id="_EABDF919-01D2-400E-93E1-66A0650AE261_errorOutputX" drools:dtype="com.myspace.mymortgagedemo.ErrorMessage" itemSubjectRef="__EABDF919-01D2-400E-93E1-66A0650AE261_errorOutputXItem" name="error"/>
         <bpmn2:dataOutput id="_EABDF919-01D2-400E-93E1-66A0650AE261_loanOutputX" drools:dtype="com.myspace.mymortgagedemo.LoanDetails" itemSubjectRef="__EABDF919-01D2-400E-93E1-66A0650AE261_loanOutputXItem" name="loan"/>
         <bpmn2:dataOutput id="_EABDF919-01D2-400E-93E1-66A0650AE261_approvalOutputX" drools:dtype="com.myspace.mymortgagedemo.Approval" itemSubjectRef="__EABDF919-01D2-400E-93E1-66A0650AE261_approvalOutputXItem" name="approval"/>
-        <bpmn2:inputSet id="_JoLH17HbEem11O0SX9yfRw">
+        <bpmn2:inputSet id="_nHAu97HcEem11O0SX9yfRw">
           <bpmn2:dataInputRefs>_EABDF919-01D2-400E-93E1-66A0650AE261_TaskNameInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_EABDF919-01D2-400E-93E1-66A0650AE261_applicationInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_EABDF919-01D2-400E-93E1-66A0650AE261_errorInputX</bpmn2:dataInputRefs>
@@ -273,63 +269,63 @@
           <bpmn2:dataInputRefs>_EABDF919-01D2-400E-93E1-66A0650AE261_SkippableInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_EABDF919-01D2-400E-93E1-66A0650AE261_GroupIdInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_JoLH2LHbEem11O0SX9yfRw">
+        <bpmn2:outputSet id="_nHAu-LHcEem11O0SX9yfRw">
           <bpmn2:dataOutputRefs>_EABDF919-01D2-400E-93E1-66A0650AE261_applicationOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_EABDF919-01D2-400E-93E1-66A0650AE261_errorOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_EABDF919-01D2-400E-93E1-66A0650AE261_loanOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_EABDF919-01D2-400E-93E1-66A0650AE261_approvalOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_JoLH2bHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAu-bHcEem11O0SX9yfRw">
         <bpmn2:targetRef>_EABDF919-01D2-400E-93E1-66A0650AE261_TaskNameInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_JoLH2rHbEem11O0SX9yfRw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_JoLH27HbEem11O0SX9yfRw"><![CDATA[RectifyApplication]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_JoLH3LHbEem11O0SX9yfRw">_EABDF919-01D2-400E-93E1-66A0650AE261_TaskNameInputX</bpmn2:to>
+        <bpmn2:assignment id="_nHAu-rHcEem11O0SX9yfRw">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_nHAu-7HcEem11O0SX9yfRw"><![CDATA[RectifyApplication]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_nHAu_LHcEem11O0SX9yfRw">_EABDF919-01D2-400E-93E1-66A0650AE261_TaskNameInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLH3bHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAu_bHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>application</bpmn2:sourceRef>
         <bpmn2:targetRef>_EABDF919-01D2-400E-93E1-66A0650AE261_applicationInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLH3rHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAu_rHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>error</bpmn2:sourceRef>
         <bpmn2:targetRef>_EABDF919-01D2-400E-93E1-66A0650AE261_errorInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLH37HbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAu_7HcEem11O0SX9yfRw">
         <bpmn2:sourceRef>loan</bpmn2:sourceRef>
         <bpmn2:targetRef>_EABDF919-01D2-400E-93E1-66A0650AE261_loanInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLH4LHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvALHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>approval</bpmn2:sourceRef>
         <bpmn2:targetRef>_EABDF919-01D2-400E-93E1-66A0650AE261_approvalInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLH4bHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvAbHcEem11O0SX9yfRw">
         <bpmn2:targetRef>_EABDF919-01D2-400E-93E1-66A0650AE261_SkippableInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_JoLH4rHbEem11O0SX9yfRw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_JoLH47HbEem11O0SX9yfRw"><![CDATA[false]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_JoLH5LHbEem11O0SX9yfRw">_EABDF919-01D2-400E-93E1-66A0650AE261_SkippableInputX</bpmn2:to>
+        <bpmn2:assignment id="_nHAvArHcEem11O0SX9yfRw">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_nHAvA7HcEem11O0SX9yfRw"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_nHAvBLHcEem11O0SX9yfRw">_EABDF919-01D2-400E-93E1-66A0650AE261_SkippableInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLH5bHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvBbHcEem11O0SX9yfRw">
         <bpmn2:targetRef>_EABDF919-01D2-400E-93E1-66A0650AE261_GroupIdInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_JoLH5rHbEem11O0SX9yfRw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_JoLH57HbEem11O0SX9yfRw"><![CDATA[broker]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_JoLH6LHbEem11O0SX9yfRw">_EABDF919-01D2-400E-93E1-66A0650AE261_GroupIdInputX</bpmn2:to>
+        <bpmn2:assignment id="_nHAvBrHcEem11O0SX9yfRw">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_nHAvB7HcEem11O0SX9yfRw"><![CDATA[broker]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_nHAvCLHcEem11O0SX9yfRw">_EABDF919-01D2-400E-93E1-66A0650AE261_GroupIdInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLH6bHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvCbHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_EABDF919-01D2-400E-93E1-66A0650AE261_applicationOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>application</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLH6rHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvCrHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_EABDF919-01D2-400E-93E1-66A0650AE261_errorOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>error</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLH67HbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvC7HcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_EABDF919-01D2-400E-93E1-66A0650AE261_loanOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>loan</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLH7LHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvDLHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_EABDF919-01D2-400E-93E1-66A0650AE261_approvalOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>approval</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -350,33 +346,33 @@ System.out.println ("----> message :" + application.getMessage());]]></drools:sc
       </bpmn2:extensionElements>
       <bpmn2:incoming>_F0B5107F-0A20-4543-B729-5D2CA0CF476D</bpmn2:incoming>
       <bpmn2:outgoing>_FC90C473-D8F6-456E-BF4B-0D60BA071AA9</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_JoLH7bHbEem11O0SX9yfRw">
+      <bpmn2:ioSpecification id="_nHAvDbHcEem11O0SX9yfRw">
         <bpmn2:dataInput id="_217D8084-7299-4E4F-898A-99FE4218CCF6_applicationInputX" drools:dtype="com.myspace.mymortgagedemo.Application" itemSubjectRef="__217D8084-7299-4E4F-898A-99FE4218CCF6_applicationInputXItem" name="application"/>
         <bpmn2:dataInput id="_217D8084-7299-4E4F-898A-99FE4218CCF6_errorInputX" drools:dtype="com.myspace.mymortgagedemo.ErrorMessage" itemSubjectRef="__217D8084-7299-4E4F-898A-99FE4218CCF6_errorInputXItem" name="error"/>
         <bpmn2:dataOutput id="_217D8084-7299-4E4F-898A-99FE4218CCF6_applicationOutputX" drools:dtype="com.myspace.mymortgagedemo.Application" itemSubjectRef="__217D8084-7299-4E4F-898A-99FE4218CCF6_applicationOutputXItem" name="application"/>
         <bpmn2:dataOutput id="_217D8084-7299-4E4F-898A-99FE4218CCF6_errorOutputX" drools:dtype="com.myspace.mymortgagedemo.ErrorMessage" itemSubjectRef="__217D8084-7299-4E4F-898A-99FE4218CCF6_errorOutputXItem" name="error"/>
-        <bpmn2:inputSet id="_JoLH7rHbEem11O0SX9yfRw">
+        <bpmn2:inputSet id="_nHAvDrHcEem11O0SX9yfRw">
           <bpmn2:dataInputRefs>_217D8084-7299-4E4F-898A-99FE4218CCF6_applicationInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_217D8084-7299-4E4F-898A-99FE4218CCF6_errorInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_JoLH77HbEem11O0SX9yfRw">
+        <bpmn2:outputSet id="_nHAvD7HcEem11O0SX9yfRw">
           <bpmn2:dataOutputRefs>_217D8084-7299-4E4F-898A-99FE4218CCF6_applicationOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_217D8084-7299-4E4F-898A-99FE4218CCF6_errorOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_JoLH8LHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvELHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>application</bpmn2:sourceRef>
         <bpmn2:targetRef>_217D8084-7299-4E4F-898A-99FE4218CCF6_applicationInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLH8bHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvEbHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>error</bpmn2:sourceRef>
         <bpmn2:targetRef>_217D8084-7299-4E4F-898A-99FE4218CCF6_errorInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLH8rHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvErHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_217D8084-7299-4E4F-898A-99FE4218CCF6_applicationOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>application</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLH87HbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvE7HcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_217D8084-7299-4E4F-898A-99FE4218CCF6_errorOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>error</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -396,7 +392,7 @@ kcontext.setVariable("loan", new LoanDetails());]]></drools:script>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_AF3B3D2A-3594-407D-8DBF-4073F14696AF</bpmn2:incoming>
       <bpmn2:outgoing>_6644E696-6F91-4663-9FCB-C4CF09CE3E35</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_JoLH9LHbEem11O0SX9yfRw">
+      <bpmn2:ioSpecification id="_nHAvFLHcEem11O0SX9yfRw">
         <bpmn2:dataInput id="_39EA3C58-83C1-4361-AC94-31BDC21FE034_applicationInputX" drools:dtype="com.myspace.mymortgagedemo.Application" itemSubjectRef="__39EA3C58-83C1-4361-AC94-31BDC21FE034_applicationInputXItem" name="application"/>
         <bpmn2:dataInput id="_39EA3C58-83C1-4361-AC94-31BDC21FE034_errorInputX" drools:dtype="com.myspace.mymortgagedemo.ErrorMessage" itemSubjectRef="__39EA3C58-83C1-4361-AC94-31BDC21FE034_errorInputXItem" name="error"/>
         <bpmn2:dataInput id="_39EA3C58-83C1-4361-AC94-31BDC21FE034_loanInputX" drools:dtype="com.myspace.mymortgagedemo.LoanDetails" itemSubjectRef="__39EA3C58-83C1-4361-AC94-31BDC21FE034_loanInputXItem" name="loan"/>
@@ -405,48 +401,48 @@ kcontext.setVariable("loan", new LoanDetails());]]></drools:script>
         <bpmn2:dataOutput id="_39EA3C58-83C1-4361-AC94-31BDC21FE034_errorOutputX" drools:dtype="com.myspace.mymortgagedemo.ErrorMessage" itemSubjectRef="__39EA3C58-83C1-4361-AC94-31BDC21FE034_errorOutputXItem" name="error"/>
         <bpmn2:dataOutput id="_39EA3C58-83C1-4361-AC94-31BDC21FE034_loanOutputX" drools:dtype="com.myspace.mymortgagedemo.LoanDetails" itemSubjectRef="__39EA3C58-83C1-4361-AC94-31BDC21FE034_loanOutputXItem" name="loan"/>
         <bpmn2:dataOutput id="_39EA3C58-83C1-4361-AC94-31BDC21FE034_approvalOutputX" drools:dtype="com.myspace.mymortgagedemo.Approval" itemSubjectRef="__39EA3C58-83C1-4361-AC94-31BDC21FE034_approvalOutputXItem" name="approval"/>
-        <bpmn2:inputSet id="_JoLH9bHbEem11O0SX9yfRw">
+        <bpmn2:inputSet id="_nHAvFbHcEem11O0SX9yfRw">
           <bpmn2:dataInputRefs>_39EA3C58-83C1-4361-AC94-31BDC21FE034_applicationInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_39EA3C58-83C1-4361-AC94-31BDC21FE034_errorInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_39EA3C58-83C1-4361-AC94-31BDC21FE034_loanInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_39EA3C58-83C1-4361-AC94-31BDC21FE034_approvalInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_JoLH9rHbEem11O0SX9yfRw">
+        <bpmn2:outputSet id="_nHAvFrHcEem11O0SX9yfRw">
           <bpmn2:dataOutputRefs>_39EA3C58-83C1-4361-AC94-31BDC21FE034_applicationOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_39EA3C58-83C1-4361-AC94-31BDC21FE034_errorOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_39EA3C58-83C1-4361-AC94-31BDC21FE034_loanOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_39EA3C58-83C1-4361-AC94-31BDC21FE034_approvalOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_JoLH97HbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvF7HcEem11O0SX9yfRw">
         <bpmn2:sourceRef>application</bpmn2:sourceRef>
         <bpmn2:targetRef>_39EA3C58-83C1-4361-AC94-31BDC21FE034_applicationInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLH-LHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvGLHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>error</bpmn2:sourceRef>
         <bpmn2:targetRef>_39EA3C58-83C1-4361-AC94-31BDC21FE034_errorInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLH-bHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvGbHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>loan</bpmn2:sourceRef>
         <bpmn2:targetRef>_39EA3C58-83C1-4361-AC94-31BDC21FE034_loanInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLH-rHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvGrHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>approval</bpmn2:sourceRef>
         <bpmn2:targetRef>_39EA3C58-83C1-4361-AC94-31BDC21FE034_approvalInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLH-7HbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvG7HcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_39EA3C58-83C1-4361-AC94-31BDC21FE034_applicationOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>application</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLH_LHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvHLHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_39EA3C58-83C1-4361-AC94-31BDC21FE034_errorOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>error</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLH_bHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvHbHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_39EA3C58-83C1-4361-AC94-31BDC21FE034_loanOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>loan</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLH_rHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvHrHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_39EA3C58-83C1-4361-AC94-31BDC21FE034_approvalOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>approval</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -459,89 +455,70 @@ kcontext.setVariable("loan", new LoanDetails());]]></drools:script>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Approve Application]]></drools:metaValue>
         </drools:metaData>
+        <drools:onEntry-script scriptFormat="http://www.java.com/java">
+          <drools:script><![CDATA[System.out.println ("Instalment: " + loan.getInstalment());
+System.out.println ("Down Payment: " + loan.getDownPayment());
+System.out.println ("Mortgage Amount: " + loan.getMortgageAmount());]]></drools:script>
+        </drools:onEntry-script>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_F1BB2703-302B-49B1-B1E3-628F104E2DE1</bpmn2:incoming>
       <bpmn2:outgoing>_547238AC-0EC3-44CB-8384-D769AFD8E852</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_JoLH_7HbEem11O0SX9yfRw">
+      <bpmn2:ioSpecification id="_nHAvH7HcEem11O0SX9yfRw">
         <bpmn2:dataInput id="_415CB942-DA2E-4C2C-837E-63D72282E4FC_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__415CB942-DA2E-4C2C-837E-63D72282E4FC_TaskNameInputXItem" name="TaskName"/>
         <bpmn2:dataInput id="_415CB942-DA2E-4C2C-837E-63D72282E4FC_applicationInputX" drools:dtype="com.myspace.mymortgagedemo.Application" itemSubjectRef="__415CB942-DA2E-4C2C-837E-63D72282E4FC_applicationInputXItem" name="application"/>
         <bpmn2:dataInput id="_415CB942-DA2E-4C2C-837E-63D72282E4FC_errorInputX" drools:dtype="com.myspace.mymortgagedemo.ErrorMessage" itemSubjectRef="__415CB942-DA2E-4C2C-837E-63D72282E4FC_errorInputXItem" name="error"/>
-        <bpmn2:dataInput id="_415CB942-DA2E-4C2C-837E-63D72282E4FC_loanInputX" drools:dtype="com.myspace.mymortgagedemo.LoanDetails" itemSubjectRef="__415CB942-DA2E-4C2C-837E-63D72282E4FC_loanInputXItem" name="loan"/>
-        <bpmn2:dataInput id="_415CB942-DA2E-4C2C-837E-63D72282E4FC_approvalInputX" drools:dtype="com.myspace.mymortgagedemo.Approval" itemSubjectRef="__415CB942-DA2E-4C2C-837E-63D72282E4FC_approvalInputXItem" name="approval"/>
         <bpmn2:dataInput id="_415CB942-DA2E-4C2C-837E-63D72282E4FC_SkippableInputX" drools:dtype="Object" itemSubjectRef="__415CB942-DA2E-4C2C-837E-63D72282E4FC_SkippableInputXItem" name="Skippable"/>
         <bpmn2:dataInput id="_415CB942-DA2E-4C2C-837E-63D72282E4FC_GroupIdInputX" drools:dtype="Object" itemSubjectRef="__415CB942-DA2E-4C2C-837E-63D72282E4FC_GroupIdInputXItem" name="GroupId"/>
         <bpmn2:dataOutput id="_415CB942-DA2E-4C2C-837E-63D72282E4FC_applicationOutputX" drools:dtype="com.myspace.mymortgagedemo.Application" itemSubjectRef="__415CB942-DA2E-4C2C-837E-63D72282E4FC_applicationOutputXItem" name="application"/>
         <bpmn2:dataOutput id="_415CB942-DA2E-4C2C-837E-63D72282E4FC_errorOutputX" drools:dtype="com.myspace.mymortgagedemo.ErrorMessage" itemSubjectRef="__415CB942-DA2E-4C2C-837E-63D72282E4FC_errorOutputXItem" name="error"/>
-        <bpmn2:dataOutput id="_415CB942-DA2E-4C2C-837E-63D72282E4FC_loanOutputX" drools:dtype="com.myspace.mymortgagedemo.LoanDetails" itemSubjectRef="__415CB942-DA2E-4C2C-837E-63D72282E4FC_loanOutputXItem" name="loan"/>
-        <bpmn2:dataOutput id="_415CB942-DA2E-4C2C-837E-63D72282E4FC_approvalOutputX" drools:dtype="com.myspace.mymortgagedemo.Approval" itemSubjectRef="__415CB942-DA2E-4C2C-837E-63D72282E4FC_approvalOutputXItem" name="approval"/>
-        <bpmn2:inputSet id="_JoLu4LHbEem11O0SX9yfRw">
+        <bpmn2:inputSet id="_nHAvILHcEem11O0SX9yfRw">
           <bpmn2:dataInputRefs>_415CB942-DA2E-4C2C-837E-63D72282E4FC_TaskNameInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_415CB942-DA2E-4C2C-837E-63D72282E4FC_applicationInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_415CB942-DA2E-4C2C-837E-63D72282E4FC_errorInputX</bpmn2:dataInputRefs>
-          <bpmn2:dataInputRefs>_415CB942-DA2E-4C2C-837E-63D72282E4FC_loanInputX</bpmn2:dataInputRefs>
-          <bpmn2:dataInputRefs>_415CB942-DA2E-4C2C-837E-63D72282E4FC_approvalInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_415CB942-DA2E-4C2C-837E-63D72282E4FC_SkippableInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_415CB942-DA2E-4C2C-837E-63D72282E4FC_GroupIdInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_JoLu4bHbEem11O0SX9yfRw">
+        <bpmn2:outputSet id="_nHAvIbHcEem11O0SX9yfRw">
           <bpmn2:dataOutputRefs>_415CB942-DA2E-4C2C-837E-63D72282E4FC_applicationOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_415CB942-DA2E-4C2C-837E-63D72282E4FC_errorOutputX</bpmn2:dataOutputRefs>
-          <bpmn2:dataOutputRefs>_415CB942-DA2E-4C2C-837E-63D72282E4FC_loanOutputX</bpmn2:dataOutputRefs>
-          <bpmn2:dataOutputRefs>_415CB942-DA2E-4C2C-837E-63D72282E4FC_approvalOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_JoLu4rHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvIrHcEem11O0SX9yfRw">
         <bpmn2:targetRef>_415CB942-DA2E-4C2C-837E-63D72282E4FC_TaskNameInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_JoLu47HbEem11O0SX9yfRw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_JoLu5LHbEem11O0SX9yfRw"><![CDATA[ApproveApplication]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_JoLu5bHbEem11O0SX9yfRw">_415CB942-DA2E-4C2C-837E-63D72282E4FC_TaskNameInputX</bpmn2:to>
+        <bpmn2:assignment id="_nHAvI7HcEem11O0SX9yfRw">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_nHAvJLHcEem11O0SX9yfRw"><![CDATA[ApproveApplication]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_nHAvJbHcEem11O0SX9yfRw">_415CB942-DA2E-4C2C-837E-63D72282E4FC_TaskNameInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLu5rHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvJrHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>application</bpmn2:sourceRef>
         <bpmn2:targetRef>_415CB942-DA2E-4C2C-837E-63D72282E4FC_applicationInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLu57HbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvJ7HcEem11O0SX9yfRw">
         <bpmn2:sourceRef>error</bpmn2:sourceRef>
         <bpmn2:targetRef>_415CB942-DA2E-4C2C-837E-63D72282E4FC_errorInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLu6LHbEem11O0SX9yfRw">
-        <bpmn2:sourceRef>loan</bpmn2:sourceRef>
-        <bpmn2:targetRef>_415CB942-DA2E-4C2C-837E-63D72282E4FC_loanInputX</bpmn2:targetRef>
-      </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLu6bHbEem11O0SX9yfRw">
-        <bpmn2:sourceRef>approval</bpmn2:sourceRef>
-        <bpmn2:targetRef>_415CB942-DA2E-4C2C-837E-63D72282E4FC_approvalInputX</bpmn2:targetRef>
-      </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLu6rHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvKLHcEem11O0SX9yfRw">
         <bpmn2:targetRef>_415CB942-DA2E-4C2C-837E-63D72282E4FC_SkippableInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_JoLu67HbEem11O0SX9yfRw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_JoLu7LHbEem11O0SX9yfRw"><![CDATA[false]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_JoLu7bHbEem11O0SX9yfRw">_415CB942-DA2E-4C2C-837E-63D72282E4FC_SkippableInputX</bpmn2:to>
+        <bpmn2:assignment id="_nHAvKbHcEem11O0SX9yfRw">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_nHAvKrHcEem11O0SX9yfRw"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_nHAvK7HcEem11O0SX9yfRw">_415CB942-DA2E-4C2C-837E-63D72282E4FC_SkippableInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLu7rHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvLLHcEem11O0SX9yfRw">
         <bpmn2:targetRef>_415CB942-DA2E-4C2C-837E-63D72282E4FC_GroupIdInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_JoLu77HbEem11O0SX9yfRw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_JoLu8LHbEem11O0SX9yfRw"><![CDATA[approver]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_JoLu8bHbEem11O0SX9yfRw">_415CB942-DA2E-4C2C-837E-63D72282E4FC_GroupIdInputX</bpmn2:to>
+        <bpmn2:assignment id="_nHAvLbHcEem11O0SX9yfRw">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_nHAvLrHcEem11O0SX9yfRw"><![CDATA[approver]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_nHAvL7HcEem11O0SX9yfRw">_415CB942-DA2E-4C2C-837E-63D72282E4FC_GroupIdInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLu8rHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvMLHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_415CB942-DA2E-4C2C-837E-63D72282E4FC_applicationOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>application</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLu87HbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvMbHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_415CB942-DA2E-4C2C-837E-63D72282E4FC_errorOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>error</bpmn2:targetRef>
-      </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLu9LHbEem11O0SX9yfRw">
-        <bpmn2:sourceRef>_415CB942-DA2E-4C2C-837E-63D72282E4FC_loanOutputX</bpmn2:sourceRef>
-        <bpmn2:targetRef>loan</bpmn2:targetRef>
-      </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLu9bHbEem11O0SX9yfRw">
-        <bpmn2:sourceRef>_415CB942-DA2E-4C2C-837E-63D72282E4FC_approvalOutputX</bpmn2:sourceRef>
-        <bpmn2:targetRef>approval</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:userTask>
     <bpmn2:businessRuleTask id="_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B" drools:ruleFlowGroup="calculateMortgage" name="Calculate Mortgage" implementation="http://www.jboss.org/drools/rule">
@@ -562,7 +539,7 @@ System.out.println ("Mortgage Amount: " + loan.getMortgageAmount());]]></drools:
       </bpmn2:extensionElements>
       <bpmn2:incoming>_8465F617-08B8-46FE-9004-01B4274476E1</bpmn2:incoming>
       <bpmn2:outgoing>_F1BB2703-302B-49B1-B1E3-628F104E2DE1</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_JoLu9rHbEem11O0SX9yfRw">
+      <bpmn2:ioSpecification id="_nHAvMrHcEem11O0SX9yfRw">
         <bpmn2:dataInput id="_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_applicationInputX" drools:dtype="com.myspace.mymortgagedemo.Application" itemSubjectRef="__8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_applicationInputXItem" name="application"/>
         <bpmn2:dataInput id="_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_errorInputX" drools:dtype="com.myspace.mymortgagedemo.ErrorMessage" itemSubjectRef="__8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_errorInputXItem" name="error"/>
         <bpmn2:dataInput id="_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_loanInputX" drools:dtype="com.myspace.mymortgagedemo.LoanDetails" itemSubjectRef="__8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_loanInputXItem" name="loan"/>
@@ -571,48 +548,48 @@ System.out.println ("Mortgage Amount: " + loan.getMortgageAmount());]]></drools:
         <bpmn2:dataOutput id="_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_errorOutputX" drools:dtype="com.myspace.mymortgagedemo.ErrorMessage" itemSubjectRef="__8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_errorOutputXItem" name="error"/>
         <bpmn2:dataOutput id="_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_loanOutputX" drools:dtype="com.myspace.mymortgagedemo.LoanDetails" itemSubjectRef="__8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_loanOutputXItem" name="loan"/>
         <bpmn2:dataOutput id="_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_approvalOutputX" drools:dtype="com.myspace.mymortgagedemo.Approval" itemSubjectRef="__8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_approvalOutputXItem" name="approval"/>
-        <bpmn2:inputSet id="_JoLu97HbEem11O0SX9yfRw">
+        <bpmn2:inputSet id="_nHAvM7HcEem11O0SX9yfRw">
           <bpmn2:dataInputRefs>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_applicationInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_errorInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_loanInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_approvalInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_JoLu-LHbEem11O0SX9yfRw">
+        <bpmn2:outputSet id="_nHAvNLHcEem11O0SX9yfRw">
           <bpmn2:dataOutputRefs>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_applicationOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_errorOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_loanOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_approvalOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_JoLu-bHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvNbHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>application</bpmn2:sourceRef>
         <bpmn2:targetRef>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_applicationInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLu-rHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvNrHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>error</bpmn2:sourceRef>
         <bpmn2:targetRef>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_errorInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLu-7HbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvN7HcEem11O0SX9yfRw">
         <bpmn2:sourceRef>loan</bpmn2:sourceRef>
         <bpmn2:targetRef>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_loanInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLu_LHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvOLHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>approval</bpmn2:sourceRef>
         <bpmn2:targetRef>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_approvalInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLu_bHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvObHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_applicationOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>application</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLu_rHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvOrHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_errorOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>error</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLu_7HbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvO7HcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_loanOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>loan</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLvALHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvPLHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B_approvalOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>approval</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -637,7 +614,7 @@ System.out.println("----> loan.creditRating : " + loan.getCreditRating());]]></d
       </bpmn2:extensionElements>
       <bpmn2:incoming>_6644E696-6F91-4663-9FCB-C4CF09CE3E35</bpmn2:incoming>
       <bpmn2:outgoing>_8465F617-08B8-46FE-9004-01B4274476E1</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_JoLvAbHbEem11O0SX9yfRw">
+      <bpmn2:ioSpecification id="_nHAvPbHcEem11O0SX9yfRw">
         <bpmn2:dataInput id="_0F76634A-510B-4AA3-80E3-68956409AB84_applicationInputX" drools:dtype="com.myspace.mymortgagedemo.Application" itemSubjectRef="__0F76634A-510B-4AA3-80E3-68956409AB84_applicationInputXItem" name="application"/>
         <bpmn2:dataInput id="_0F76634A-510B-4AA3-80E3-68956409AB84_errorInputX" drools:dtype="com.myspace.mymortgagedemo.ErrorMessage" itemSubjectRef="__0F76634A-510B-4AA3-80E3-68956409AB84_errorInputXItem" name="error"/>
         <bpmn2:dataInput id="_0F76634A-510B-4AA3-80E3-68956409AB84_loanInputX" drools:dtype="com.myspace.mymortgagedemo.LoanDetails" itemSubjectRef="__0F76634A-510B-4AA3-80E3-68956409AB84_loanInputXItem" name="loan"/>
@@ -646,48 +623,48 @@ System.out.println("----> loan.creditRating : " + loan.getCreditRating());]]></d
         <bpmn2:dataOutput id="_0F76634A-510B-4AA3-80E3-68956409AB84_errorOutputX" drools:dtype="com.myspace.mymortgagedemo.ErrorMessage" itemSubjectRef="__0F76634A-510B-4AA3-80E3-68956409AB84_errorOutputXItem" name="error"/>
         <bpmn2:dataOutput id="_0F76634A-510B-4AA3-80E3-68956409AB84_loanOutputX" drools:dtype="com.myspace.mymortgagedemo.LoanDetails" itemSubjectRef="__0F76634A-510B-4AA3-80E3-68956409AB84_loanOutputXItem" name="loan"/>
         <bpmn2:dataOutput id="_0F76634A-510B-4AA3-80E3-68956409AB84_approvalOutputX" drools:dtype="com.myspace.mymortgagedemo.Approval" itemSubjectRef="__0F76634A-510B-4AA3-80E3-68956409AB84_approvalOutputXItem" name="approval"/>
-        <bpmn2:inputSet id="_JoLvArHbEem11O0SX9yfRw">
+        <bpmn2:inputSet id="_nHAvPrHcEem11O0SX9yfRw">
           <bpmn2:dataInputRefs>_0F76634A-510B-4AA3-80E3-68956409AB84_applicationInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_0F76634A-510B-4AA3-80E3-68956409AB84_errorInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_0F76634A-510B-4AA3-80E3-68956409AB84_loanInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_0F76634A-510B-4AA3-80E3-68956409AB84_approvalInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_JoLvA7HbEem11O0SX9yfRw">
+        <bpmn2:outputSet id="_nHAvP7HcEem11O0SX9yfRw">
           <bpmn2:dataOutputRefs>_0F76634A-510B-4AA3-80E3-68956409AB84_applicationOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_0F76634A-510B-4AA3-80E3-68956409AB84_errorOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_0F76634A-510B-4AA3-80E3-68956409AB84_loanOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_0F76634A-510B-4AA3-80E3-68956409AB84_approvalOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_JoLvBLHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvQLHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>application</bpmn2:sourceRef>
         <bpmn2:targetRef>_0F76634A-510B-4AA3-80E3-68956409AB84_applicationInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLvBbHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvQbHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>error</bpmn2:sourceRef>
         <bpmn2:targetRef>_0F76634A-510B-4AA3-80E3-68956409AB84_errorInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLvBrHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvQrHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>loan</bpmn2:sourceRef>
         <bpmn2:targetRef>_0F76634A-510B-4AA3-80E3-68956409AB84_loanInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLvB7HbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvQ7HcEem11O0SX9yfRw">
         <bpmn2:sourceRef>approval</bpmn2:sourceRef>
         <bpmn2:targetRef>_0F76634A-510B-4AA3-80E3-68956409AB84_approvalInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLvCLHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvRLHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_0F76634A-510B-4AA3-80E3-68956409AB84_applicationOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>application</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLvCbHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvRbHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_0F76634A-510B-4AA3-80E3-68956409AB84_errorOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>error</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLvCrHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvRrHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_0F76634A-510B-4AA3-80E3-68956409AB84_loanOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>loan</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLvC7HbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvR7HcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_0F76634A-510B-4AA3-80E3-68956409AB84_approvalOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>approval</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -710,55 +687,55 @@ System.out.println("----> loan.creditRating : " + loan.getCreditRating());]]></d
       </bpmn2:extensionElements>
       <bpmn2:incoming>_E46488D3-D95D-4AD3-ADE3-336A153F8A27</bpmn2:incoming>
       <bpmn2:outgoing>_BFBC6C0E-6B57-4F12-8FFF-C85C7EAAE3EA</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_JoLvDLHbEem11O0SX9yfRw">
+      <bpmn2:ioSpecification id="_nHAvSLHcEem11O0SX9yfRw">
         <bpmn2:dataInput id="_34D607FD-4817-4317-950D-87489CB5DF18_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__34D607FD-4817-4317-950D-87489CB5DF18_TaskNameInputXItem" name="TaskName"/>
         <bpmn2:dataInput id="_34D607FD-4817-4317-950D-87489CB5DF18_applicationInputX" drools:dtype="com.myspace.mymortgagedemo.Application" itemSubjectRef="__34D607FD-4817-4317-950D-87489CB5DF18_applicationInputXItem" name="application"/>
         <bpmn2:dataInput id="_34D607FD-4817-4317-950D-87489CB5DF18_SkippableInputX" drools:dtype="Object" itemSubjectRef="__34D607FD-4817-4317-950D-87489CB5DF18_SkippableInputXItem" name="Skippable"/>
         <bpmn2:dataInput id="_34D607FD-4817-4317-950D-87489CB5DF18_GroupIdInputX" drools:dtype="Object" itemSubjectRef="__34D607FD-4817-4317-950D-87489CB5DF18_GroupIdInputXItem" name="GroupId"/>
         <bpmn2:dataOutput id="_34D607FD-4817-4317-950D-87489CB5DF18_applicationOutputX" drools:dtype="com.myspace.mymortgagedemo.Application" itemSubjectRef="__34D607FD-4817-4317-950D-87489CB5DF18_applicationOutputXItem" name="application"/>
-        <bpmn2:inputSet id="_JoLvDbHbEem11O0SX9yfRw">
+        <bpmn2:inputSet id="_nHAvSbHcEem11O0SX9yfRw">
           <bpmn2:dataInputRefs>_34D607FD-4817-4317-950D-87489CB5DF18_TaskNameInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_34D607FD-4817-4317-950D-87489CB5DF18_applicationInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_34D607FD-4817-4317-950D-87489CB5DF18_SkippableInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_34D607FD-4817-4317-950D-87489CB5DF18_GroupIdInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_JoLvDrHbEem11O0SX9yfRw">
+        <bpmn2:outputSet id="_nHAvSrHcEem11O0SX9yfRw">
           <bpmn2:dataOutputRefs>_34D607FD-4817-4317-950D-87489CB5DF18_applicationOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_JoLvD7HbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvS7HcEem11O0SX9yfRw">
         <bpmn2:targetRef>_34D607FD-4817-4317-950D-87489CB5DF18_TaskNameInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_JoLvELHbEem11O0SX9yfRw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_JoLvEbHbEem11O0SX9yfRw"><![CDATA[ReviewApplication]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_JoLvErHbEem11O0SX9yfRw">_34D607FD-4817-4317-950D-87489CB5DF18_TaskNameInputX</bpmn2:to>
+        <bpmn2:assignment id="_nHAvTLHcEem11O0SX9yfRw">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_nHAvTbHcEem11O0SX9yfRw"><![CDATA[ReviewApplication]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_nHAvTrHcEem11O0SX9yfRw">_34D607FD-4817-4317-950D-87489CB5DF18_TaskNameInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLvE7HbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvT7HcEem11O0SX9yfRw">
         <bpmn2:sourceRef>application</bpmn2:sourceRef>
         <bpmn2:targetRef>_34D607FD-4817-4317-950D-87489CB5DF18_applicationInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLvFLHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvULHcEem11O0SX9yfRw">
         <bpmn2:targetRef>_34D607FD-4817-4317-950D-87489CB5DF18_SkippableInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_JoLvFbHbEem11O0SX9yfRw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_JoLvFrHbEem11O0SX9yfRw"><![CDATA[false]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_JoLvF7HbEem11O0SX9yfRw">_34D607FD-4817-4317-950D-87489CB5DF18_SkippableInputX</bpmn2:to>
+        <bpmn2:assignment id="_nHAvUbHcEem11O0SX9yfRw">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_nHAvUrHcEem11O0SX9yfRw"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_nHAvU7HcEem11O0SX9yfRw">_34D607FD-4817-4317-950D-87489CB5DF18_SkippableInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_JoLvGLHbEem11O0SX9yfRw">
+      <bpmn2:dataInputAssociation id="_nHAvVLHcEem11O0SX9yfRw">
         <bpmn2:targetRef>_34D607FD-4817-4317-950D-87489CB5DF18_GroupIdInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_JoLvGbHbEem11O0SX9yfRw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_JoLvGrHbEem11O0SX9yfRw"><![CDATA[broker]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_JoLvG7HbEem11O0SX9yfRw">_34D607FD-4817-4317-950D-87489CB5DF18_GroupIdInputX</bpmn2:to>
+        <bpmn2:assignment id="_nHAvVbHcEem11O0SX9yfRw">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_nHAvVrHcEem11O0SX9yfRw"><![CDATA[broker]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_nHAvV7HcEem11O0SX9yfRw">_34D607FD-4817-4317-950D-87489CB5DF18_GroupIdInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_JoLvHLHbEem11O0SX9yfRw">
+      <bpmn2:dataOutputAssociation id="_nHAvWLHcEem11O0SX9yfRw">
         <bpmn2:sourceRef>_34D607FD-4817-4317-950D-87489CB5DF18_applicationOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>application</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:userTask>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_JoLvHbHbEem11O0SX9yfRw">
-    <bpmndi:BPMNPlane id="_JoLvHrHbEem11O0SX9yfRw" bpmnElement="MyMortgageDemo.MortgageProcessing">
+  <bpmndi:BPMNDiagram id="_nHAvWbHcEem11O0SX9yfRw">
+    <bpmndi:BPMNPlane id="_nHAvWrHcEem11O0SX9yfRw" bpmnElement="MyMortgageDemo.MortgageProcessing">
       <bpmndi:BPMNShape id="shape__34D607FD-4817-4317-950D-87489CB5DF18" bpmnElement="_34D607FD-4817-4317-950D-87489CB5DF18">
         <dc:Bounds height="102.0" width="154.0" x="236.0" y="77.0"/>
       </bpmndi:BPMNShape>
@@ -865,12 +842,12 @@ System.out.println("----> loan.creditRating : " + loan.getCreditRating());]]></d
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_JoLvH7HbEem11O0SX9yfRw" type="BPSimData">
+  <bpmn2:relationship id="_nHAvW7HcEem11O0SX9yfRw" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_34D607FD-4817-4317-950D-87489CB5DF18" id="_JoLvILHbEem11O0SX9yfRw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_34D607FD-4817-4317-950D-87489CB5DF18" id="_nHAvXLHcEem11O0SX9yfRw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -890,7 +867,7 @@ System.out.println("----> loan.creditRating : " + loan.getCreditRating());]]></d
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_0F76634A-510B-4AA3-80E3-68956409AB84" id="_JoLvIbHbEem11O0SX9yfRw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_0F76634A-510B-4AA3-80E3-68956409AB84" id="_nHAvXbHcEem11O0SX9yfRw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -910,7 +887,7 @@ System.out.println("----> loan.creditRating : " + loan.getCreditRating());]]></d
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B" id="_JoLvIrHbEem11O0SX9yfRw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_8BE7729C-5FA1-4922-86AA-AFCE6F374F7B" id="_nHAvXrHcEem11O0SX9yfRw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -930,7 +907,7 @@ System.out.println("----> loan.creditRating : " + loan.getCreditRating());]]></d
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_415CB942-DA2E-4C2C-837E-63D72282E4FC" id="_JoLvI7HbEem11O0SX9yfRw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_415CB942-DA2E-4C2C-837E-63D72282E4FC" id="_nHAvX7HcEem11O0SX9yfRw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -950,34 +927,14 @@ System.out.println("----> loan.creditRating : " + loan.getCreditRating());]]></d
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_FE23301E-60D3-46FA-8D30-B236F12BD21F" id="_JoLvJLHbEem11O0SX9yfRw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_FE23301E-60D3-46FA-8D30-B236F12BD21F" id="_nHAvYLHcEem11O0SX9yfRw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_39EA3C58-83C1-4361-AC94-31BDC21FE034" id="_JoLvJbHbEem11O0SX9yfRw">
-            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
-              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
-                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
-              </bpsim:ProcessingTime>
-            </bpsim:TimeParameters>
-            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
-              <bpsim:Availability xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:Availability>
-              <bpsim:Quantity xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:Quantity>
-            </bpsim:ResourceParameters>
-            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
-              <bpsim:UnitCost xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:UnitCost>
-            </bpsim:CostParameters>
-          </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_217D8084-7299-4E4F-898A-99FE4218CCF6" id="_JoLvJrHbEem11O0SX9yfRw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_39EA3C58-83C1-4361-AC94-31BDC21FE034" id="_nHAvYbHcEem11O0SX9yfRw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -997,7 +954,7 @@ System.out.println("----> loan.creditRating : " + loan.getCreditRating());]]></d
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_EABDF919-01D2-400E-93E1-66A0650AE261" id="_JoLvJ7HbEem11O0SX9yfRw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_217D8084-7299-4E4F-898A-99FE4218CCF6" id="_nHAvYrHcEem11O0SX9yfRw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1017,7 +974,27 @@ System.out.println("----> loan.creditRating : " + loan.getCreditRating());]]></d
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_B7A82B77-F86D-4B03-9E22-B25825B9611A" id="_JoLvKLHbEem11O0SX9yfRw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_EABDF919-01D2-400E-93E1-66A0650AE261" id="_nHAvY7HcEem11O0SX9yfRw">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_B7A82B77-F86D-4B03-9E22-B25825B9611A" id="_nHAvZLHcEem11O0SX9yfRw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1040,7 +1017,7 @@ System.out.println("----> loan.creditRating : " + loan.getCreditRating());]]></d
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_JoLH0LHbEem11O0SX9yfRw</bpmn2:source>
-    <bpmn2:target>_JoLH0LHbEem11O0SX9yfRw</bpmn2:target>
+    <bpmn2:source>_nHAu8LHcEem11O0SX9yfRw</bpmn2:source>
+    <bpmn2:target>_nHAu8LHcEem11O0SX9yfRw</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
