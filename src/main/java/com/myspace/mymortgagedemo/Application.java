@@ -27,14 +27,17 @@ public class Application implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Margin of Finance")
 	private java.lang.Double margin;
 
-	@org.kie.api.definition.type.Label(value = "Approval Status")
+	@org.kie.api.definition.type.Label("Approval Status")
 	private com.myspace.mymortgagedemo.Approval approval;
 
-	@org.kie.api.definition.type.Label(value = "Error")
+	@org.kie.api.definition.type.Label("Error")
 	private com.myspace.mymortgagedemo.ErrorMessage error;
 
-	@org.kie.api.definition.type.Label(value = "Loan Details")
+	@org.kie.api.definition.type.Label("Loan Details")
 	private com.myspace.mymortgagedemo.LoanDetails loanDetails;
+
+	@org.kie.api.definition.type.Label(value = "Credit Rating")
+	private java.lang.Integer creditRating;
 
 	public Application() {
 	}
@@ -120,12 +123,21 @@ public class Application implements java.io.Serializable {
 		this.loanDetails = loanDetails;
 	}
 
+	public java.lang.Integer getCreditRating() {
+		return this.creditRating;
+	}
+
+	public void setCreditRating(java.lang.Integer creditRating) {
+		this.creditRating = creditRating;
+	}
+
 	public Application(java.lang.Double price, java.lang.Integer amortization,
 			java.lang.String name, java.lang.Integer age, java.lang.String iid,
 			java.lang.Double income, java.lang.Double margin,
 			com.myspace.mymortgagedemo.Approval approval,
 			com.myspace.mymortgagedemo.ErrorMessage error,
-			com.myspace.mymortgagedemo.LoanDetails loanDetails) {
+			com.myspace.mymortgagedemo.LoanDetails loanDetails,
+			java.lang.Integer creditRating) {
 		this.price = price;
 		this.amortization = amortization;
 		this.name = name;
@@ -136,6 +148,7 @@ public class Application implements java.io.Serializable {
 		this.approval = approval;
 		this.error = error;
 		this.loanDetails = loanDetails;
+		this.creditRating = creditRating;
 	}
 
 }
