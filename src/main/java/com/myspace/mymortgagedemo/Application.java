@@ -27,16 +27,7 @@ public class Application implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Margin of Finance")
 	private java.lang.Double margin;
 
-	@org.kie.api.definition.type.Label("Approval Status")
-	private com.myspace.mymortgagedemo.Approval approval;
-
-	@org.kie.api.definition.type.Label("Error")
-	private com.myspace.mymortgagedemo.ErrorMessage error;
-
-	@org.kie.api.definition.type.Label("Loan Details")
-	private com.myspace.mymortgagedemo.LoanDetails loanDetails;
-
-	@org.kie.api.definition.type.Label(value = "Credit Rating")
+	@org.kie.api.definition.type.Label("Credit Rating")
 	private java.lang.Integer creditRating;
 
 	public Application() {
@@ -98,31 +89,6 @@ public class Application implements java.io.Serializable {
 		this.margin = margin;
 	}
 
-	public com.myspace.mymortgagedemo.Approval getApproval() {
-		return this.approval;
-	}
-
-	public void setApproval(com.myspace.mymortgagedemo.Approval approval) {
-		this.approval = approval;
-	}
-
-	public com.myspace.mymortgagedemo.ErrorMessage getError() {
-		return this.error;
-	}
-
-	public void setError(com.myspace.mymortgagedemo.ErrorMessage error) {
-		this.error = error;
-	}
-
-	public com.myspace.mymortgagedemo.LoanDetails getLoanDetails() {
-		return this.loanDetails;
-	}
-
-	public void setLoanDetails(
-			com.myspace.mymortgagedemo.LoanDetails loanDetails) {
-		this.loanDetails = loanDetails;
-	}
-
 	public java.lang.Integer getCreditRating() {
 		return this.creditRating;
 	}
@@ -134,9 +100,6 @@ public class Application implements java.io.Serializable {
 	public Application(java.lang.Double price, java.lang.Integer amortization,
 			java.lang.String name, java.lang.Integer age, java.lang.String iid,
 			java.lang.Double income, java.lang.Double margin,
-			com.myspace.mymortgagedemo.Approval approval,
-			com.myspace.mymortgagedemo.ErrorMessage error,
-			com.myspace.mymortgagedemo.LoanDetails loanDetails,
 			java.lang.Integer creditRating) {
 		this.price = price;
 		this.amortization = amortization;
@@ -145,9 +108,6 @@ public class Application implements java.io.Serializable {
 		this.iid = iid;
 		this.income = income;
 		this.margin = margin;
-		this.approval = approval;
-		this.error = error;
-		this.loanDetails = loanDetails;
 		this.creditRating = creditRating;
 	}
 
