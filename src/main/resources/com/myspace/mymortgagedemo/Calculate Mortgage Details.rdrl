@@ -7,13 +7,11 @@ rule "Calculate Mortgage Details"
 	ruleflow-group "calculateMortgage"
 	salience 0
 	when
-		app : Application( margin > 0.0 , price > 0.0 , interest > 0.0 )
+		app : Application( margin > 0.0 , price > 0.0 , loan : loanDetails != null , loanDetails.interest > 0.0 )
 	then
-		app.setDownPayment( (1-(app.margin/100)) * app.price );
-		app.setMortgageAmount( app.price - app.downPayment );
-		app.setInstallment( calculateInstallment (app.mortgageAmount, app.interest, app.amortization) );
-		System.out.println ( "---> app.price = " + app.price );
-		System.out.println ( "---> app.downPayment = " + app.downPayment );
-		System.out.println ( "---> app.mortgageAmount = " + app.mortgageAmount );
-		System.out.println ( "---> (app.price - app.downPayment) = " + (app.price - app.downPayment) );
+		modify( loan ) {
+				setDownPayment( (1-(app.margin/100)) * app.price ), 
+				setMortgageAmount( app.price - loan.downPayment ), 
+				setInstalment( calculateInstallment (loan.mortgageAmount, loan.interest, loan.amortization) )
+		}
 end
