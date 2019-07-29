@@ -6,12 +6,70 @@ package com.myspace.mymortgagedemo;
 
 public class LoanDetails implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public LoanDetails() {
-    }
+	@org.kie.api.definition.type.Label(value = "Interest")
+	private java.lang.Double interest;
+	@org.kie.api.definition.type.Label(value = "Mortgage Amount")
+	private java.lang.Double mortgageAmount;
+	@org.kie.api.definition.type.Label(value = "Monthly Instalment")
+	private java.lang.Double instalment;
+	@org.kie.api.definition.type.Label(value = "Down Payment")
+	private java.lang.Double downPayment;
+	@org.kie.api.definition.type.Label(value = "Credit Rating")
+	private java.lang.Integer creditRating;
 
+	public LoanDetails() {
+	}
 
+	public java.lang.Double getInterest() {
+		return this.interest;
+	}
 
+	public void setInterest(java.lang.Double interest) {
+		this.interest = interest;
+	}
+
+	public java.lang.Double getMortgageAmount() {
+		return this.mortgageAmount;
+	}
+
+	public void setMortgageAmount(java.lang.Double mortgageAmount) {
+		this.mortgageAmount = mortgageAmount;
+	}
+
+	public java.lang.Double getInstalment() {
+		return this.instalment;
+	}
+
+	public void setInstalment(java.lang.Double instalment) {
+		this.instalment = instalment;
+	}
+
+	public java.lang.Double getDownPayment() {
+		return this.downPayment;
+	}
+
+	public void setDownPayment(java.lang.Double downPayment) {
+		this.downPayment = downPayment;
+	}
+
+	public java.lang.Integer getCreditRating() {
+		return this.creditRating;
+	}
+
+	public void setCreditRating(java.lang.Integer creditRating) {
+		this.creditRating = creditRating;
+	}
+
+	public LoanDetails(java.lang.Double interest,
+			java.lang.Double mortgageAmount, java.lang.Double instalment,
+			java.lang.Double downPayment, java.lang.Integer creditRating) {
+		this.interest = interest;
+		this.mortgageAmount = mortgageAmount;
+		this.instalment = instalment;
+		this.downPayment = downPayment;
+		this.creditRating = creditRating;
+	}
 
 }
