@@ -165,6 +165,28 @@
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+    <Pattern52>
+      <factType>LoanDetails</factType>
+      <boundName>loan0</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <hideColumn>true</hideColumn>
+          <width>100</width>
+          <header>hidden_0</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>creditRating</factField>
+          <fieldType>Integer</fieldType>
+          <operator></operator>
+          <parameters/>
+          <binding>cr0</binding>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+      <entryPointName></entryPointName>
+    </Pattern52>
   </conditionPatterns>
   <actionCols>
     <set-field-col52>
@@ -196,6 +218,20 @@
       <type>Integer</type>
       <isInsertLogical>false</isInsertLogical>
     </insert-fact-column52>
+    <set-field-col52>
+      <typedDefaultValue>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>100</width>
+      <header>cr0</header>
+      <boundName>loan0</boundName>
+      <factField>creditRating</factField>
+      <type>Integer</type>
+      <update>false</update>
+    </set-field-col52>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -279,6 +315,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">220</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric class="int">220</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
@@ -336,6 +383,17 @@
         <valueNumeric class="double">250000.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">240</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -399,6 +457,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">280</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric class="int">280</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
@@ -456,6 +525,17 @@
         <valueNumeric class="double">500000.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">300</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -519,6 +599,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">325</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric class="int">325</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
@@ -576,6 +667,17 @@
         <valueNumeric class="double">100000.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">240</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -639,6 +741,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">260</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric class="int">260</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
@@ -696,6 +809,17 @@
         <valueNumeric class="double">350000.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">300</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -759,6 +883,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">320</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric class="int">320</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
@@ -816,6 +951,17 @@
         <valueNumeric class="double">9999999.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">345</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -879,6 +1025,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">305</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric class="int">305</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
@@ -936,6 +1093,17 @@
         <valueNumeric class="double">250000.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">325</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -999,6 +1167,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">365</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric class="int">365</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
@@ -1056,6 +1235,17 @@
         <valueNumeric class="double">500000.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">385</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1119,6 +1309,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">405</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric class="int">405</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
@@ -1176,6 +1377,17 @@
         <valueNumeric class="double">100000.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">320</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1239,6 +1451,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">340</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric class="int">340</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
@@ -1296,6 +1519,17 @@
         <valueNumeric class="double">350000.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">380</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1359,6 +1593,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">400</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric class="int">400</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
@@ -1416,6 +1661,17 @@
         <valueNumeric class="double">9999999.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_DOUBLE</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">425</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
