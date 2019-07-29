@@ -65,7 +65,7 @@
                   </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                   <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                     <value>$lessThanOrEqual</value>
-                    <operator>&gt;=</operator>
+                    <operator>&lt;=</operator>
                     <constraintValueType>7</constraintValueType>
                     <expression>
                       <parts/>
@@ -108,7 +108,7 @@
           <constraintValueType>1</constraintValueType>
           <factField>creditRating</factField>
           <fieldType>Integer</fieldType>
-          <operator>&gt;=</operator>
+          <operator>&lt;=</operator>
           <parameters/>
           <varName>$lessThanOrEqual</varName>
           <factType>LoanDetails</factType>
