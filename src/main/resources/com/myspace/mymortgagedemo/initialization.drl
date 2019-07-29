@@ -1,2 +1,19 @@
 package com.myspace.mymortgagedemo;
 
+import com.myspace.mymortgagedemo.ErrorMessage;
+
+// declare any global variables here
+// TODO:add a proper logging layer
+// import org.apache.log4j.Logger
+// global Logger LOGGER;
+
+rule "Initialize an ErrorMessage object"
+	dialect "mvel"
+	ruleflow-group "initialisation-rules"
+	no-loop true
+	when
+	    applicant : ErrorMessage( )
+	then
+	    System.out.println("Rule fired : [" + drools.getRule().getName()+"]");
+end
+
