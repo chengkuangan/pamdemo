@@ -12,6 +12,6 @@ rule "Calculate Mortgage Details"
 		modify( loan ) {
 				setDownPayment( (1-(app.margin/100)) * app.price ), 
 				setMortgageAmount( app.price - loan.downPayment ), 
-				setInstalment( calculateInstallment (loan.mortgageAmount, loan.interest, loan.amortization) )
+				setInstalment( calculateInstallment (loan.mortgageAmount, loan.interest, app.amortization) )
 		}
 end
