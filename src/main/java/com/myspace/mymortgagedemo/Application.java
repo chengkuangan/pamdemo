@@ -10,13 +10,8 @@ public class Application implements java.io.Serializable {
 
 	@org.kie.api.definition.type.Label("Property Price")
 	private java.lang.Double price;
-	@org.kie.api.definition.type.Label("Down Payment")
-	private java.lang.Double downPayment;
 	@org.kie.api.definition.type.Label("Loan Tenure")
 	private java.lang.Integer amortization;
-	@org.kie.api.definition.type.Label("Interest Rate")
-	private java.lang.Double interest;
-
 	@org.kie.api.definition.type.Label("Applicant Name")
 	private java.lang.String name;
 
@@ -26,29 +21,20 @@ public class Application implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Applicant Identification ID")
 	private java.lang.String iid;
 
-	@org.kie.api.definition.type.Label("Credit Rating")
-	private Integer creditRating;
-
 	@org.kie.api.definition.type.Label("Applicant Income")
 	private java.lang.Double income;
-
-	@org.kie.api.definition.type.Label("Application Status")
-	private java.lang.String status;
-
-	@org.kie.api.definition.type.Label("Message")
-	private java.lang.String message;
 
 	@org.kie.api.definition.type.Label("Margin of Finance")
 	private java.lang.Double margin;
 
-	@org.kie.api.definition.type.Label("Monthly Installment")
-	private java.lang.Double installment;
+	@org.kie.api.definition.type.Label(value = "Approval Status")
+	private com.myspace.mymortgagedemo.Approval approval;
 
-	@org.kie.api.definition.type.Label("Mortgage Amount")
-	private java.lang.Double mortgageAmount;
+	@org.kie.api.definition.type.Label(value = "Error")
+	private com.myspace.mymortgagedemo.ErrorMessage error;
 
-	@org.kie.api.definition.type.Label(value = "Application Approved?")
-	private java.lang.Boolean approved;
+	@org.kie.api.definition.type.Label(value = "Loan Details")
+	private com.myspace.mymortgagedemo.LoanDetails loanDetails;
 
 	public Application() {
 	}
@@ -61,28 +47,12 @@ public class Application implements java.io.Serializable {
 		this.price = price;
 	}
 
-	public java.lang.Double getDownPayment() {
-		return this.downPayment;
-	}
-
-	public void setDownPayment(java.lang.Double downPayment) {
-		this.downPayment = downPayment;
-	}
-
 	public java.lang.Integer getAmortization() {
 		return this.amortization;
 	}
 
 	public void setAmortization(java.lang.Integer amortization) {
 		this.amortization = amortization;
-	}
-
-	public java.lang.Double getInterest() {
-		return this.interest;
-	}
-
-	public void setInterest(java.lang.Double interest) {
-		this.interest = interest;
 	}
 
 	public java.lang.String getName() {
@@ -117,22 +87,6 @@ public class Application implements java.io.Serializable {
 		this.income = income;
 	}
 
-	public java.lang.String getStatus() {
-		return this.status;
-	}
-
-	public void setStatus(java.lang.String status) {
-		this.status = status;
-	}
-
-	public java.lang.String getMessage() {
-		return this.message;
-	}
-
-	public void setMessage(java.lang.String message) {
-		this.message = message;
-	}
-
 	public java.lang.Double getMargin() {
 		return this.margin;
 	}
@@ -141,60 +95,47 @@ public class Application implements java.io.Serializable {
 		this.margin = margin;
 	}
 
-	public java.lang.Double getInstallment() {
-		return this.installment;
+	public com.myspace.mymortgagedemo.Approval getApproval() {
+		return this.approval;
 	}
 
-	public void setInstallment(java.lang.Double installment) {
-		this.installment = installment;
+	public void setApproval(com.myspace.mymortgagedemo.Approval approval) {
+		this.approval = approval;
 	}
 
-	public java.lang.Double getMortgageAmount() {
-		return this.mortgageAmount;
+	public com.myspace.mymortgagedemo.ErrorMessage getError() {
+		return this.error;
 	}
 
-	public void setMortgageAmount(java.lang.Double mortgageAmount) {
-		this.mortgageAmount = mortgageAmount;
+	public void setError(com.myspace.mymortgagedemo.ErrorMessage error) {
+		this.error = error;
 	}
 
-	public java.lang.Integer getCreditRating() {
-		return this.creditRating;
+	public com.myspace.mymortgagedemo.LoanDetails getLoanDetails() {
+		return this.loanDetails;
 	}
 
-	public void setCreditRating(java.lang.Integer creditRating) {
-		this.creditRating = creditRating;
+	public void setLoanDetails(
+			com.myspace.mymortgagedemo.LoanDetails loanDetails) {
+		this.loanDetails = loanDetails;
 	}
 
-	public java.lang.Boolean getApproved() {
-		return this.approved;
-	}
-
-	public void setApproved(java.lang.Boolean approved) {
-		this.approved = approved;
-	}
-
-	public Application(java.lang.Double price, java.lang.Double downPayment,
-			java.lang.Integer amortization, java.lang.Double interest,
+	public Application(java.lang.Double price, java.lang.Integer amortization,
 			java.lang.String name, java.lang.Integer age, java.lang.String iid,
-			java.lang.Integer creditRating, java.lang.Double income,
-			java.lang.String status, java.lang.String message,
-			java.lang.Double margin, java.lang.Double installment,
-			java.lang.Double mortgageAmount, java.lang.Boolean approved) {
+			java.lang.Double income, java.lang.Double margin,
+			com.myspace.mymortgagedemo.Approval approval,
+			com.myspace.mymortgagedemo.ErrorMessage error,
+			com.myspace.mymortgagedemo.LoanDetails loanDetails) {
 		this.price = price;
-		this.downPayment = downPayment;
 		this.amortization = amortization;
-		this.interest = interest;
 		this.name = name;
 		this.age = age;
 		this.iid = iid;
-		this.creditRating = creditRating;
 		this.income = income;
-		this.status = status;
-		this.message = message;
 		this.margin = margin;
-		this.installment = installment;
-		this.mortgageAmount = mortgageAmount;
-		this.approved = approved;
+		this.approval = approval;
+		this.error = error;
+		this.loanDetails = loanDetails;
 	}
 
 }
