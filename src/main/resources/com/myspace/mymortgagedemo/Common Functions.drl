@@ -21,7 +21,7 @@ function double calculateInstallment (double amount, double interest, int tenure
 }
 
 function String formatNumber(double amount){
-    java.text.DecimalFormat f = new java.text.DecimalFormat("##.##");
+    java.text.DecimalFormat f = new java.text.DecimalFormat("#,###.##");
     return f.format(amount);
 }
 
